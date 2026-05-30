@@ -3,7 +3,7 @@
 This project includes the following public-domain (PD) hymns as initial MVP content.
 All texts are confirmed PD based on the criteria below.
 
-## Included hymns (MVP, 5 songs)
+## Included hymns
 
 | # | Title | Lyricist | Composer | Year | PD basis |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@ All texts are confirmed PD based on the criteria below.
 | 3 | It Is Well with My Soul | Horatio Spafford (1828–1888) | Philip Bliss (1838–1876) | 1873 | US Copyright Office 1978 determination of PD |
 | 4 | Holy, Holy, Holy! | Reginald Heber (1783–1826) | John B. Dykes (1823–1876) | 1826 / 1861 | Authors died > 150 years ago |
 | 5 | Great Is Thy Faithfulness | Thomas Chisholm (1866–1960) | William Runyan (1870–1957) | 1923 | Entered US PD in 2019 (95-year rule) |
+| 6 | 主われを愛す (Jesus Loves Me, Japanese) | Anna B. Warner (1822–1915), Japanese translation by Julia N. Crosby (1833–1918) | William B. Bradbury (1816–1868) | 1872 (translation) | Translator died 1918 (> 70 years post-mortem auctoris); original authors died > 100 years ago |
 
 ## User-added songs
 
