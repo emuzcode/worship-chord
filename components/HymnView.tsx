@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { ChordProParser, HtmlDivFormatter } from "chordsheetjs";
 import type { Hymn } from "@/lib/types";
+import { WakeLockButton } from "./WakeLockButton";
 
 type Props = {
   hymn: Hymn;
@@ -41,7 +42,8 @@ export function HymnView({ hymn }: Props) {
       />
 
       <div className="fixed bottom-0 left-0 right-0 bg-[#0a0a0a]/95 backdrop-blur border-t border-white/10 px-4 py-3">
-        <div className="max-w-3xl mx-auto flex items-center justify-between gap-4">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
+          <WakeLockButton />
           <button
             type="button"
             onClick={() => setSemitones((s) => s - 1)}
