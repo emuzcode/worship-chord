@@ -22,6 +22,7 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 | 12 | 聖なる聖なる聖なるかな | Holy, Holy, Holy, Lord God Almighty | Hugh J. Foss (ヒウ・ゼ・フヲス) ed., 聖公会讃美歌 (1891), at the time titled 「いときよきかな」 | Reginald Heber (1783–1826) | John B. Dykes (1823–1876), tune "Nicaea" | 1891 | First Japanese translation appeared in 聖公会讃美歌 (Meiji 24, 1891) no. 96 — > 130 years ago. Wikisource ja hosts the full PD text |
 | 13 | エサイの根より | Es ist ein Ros entsprungen | Nakayama Masaki 中山昌樹 (1886–1944) | Anonymous 15th-century German hymn | Michael Praetorius (1571–1621), harmonization from *Musae Sioniae* (1609) | 1931 | Translator died 1944 (> 70 years); the German hymn and Praetorius's harmonization are PD by > 400 years. Wikipedia ja quotes the Nakayama translation in full |
 | 14 | 神はわがやぐら | Ein feste Burg ist unser Gott (Luther) | Editorial committee of 讃美歌 (1903) | Martin Luther (1483–1546) | Martin Luther (1483–1546) | 1903 | Luther's original is > 470 years old. Translation appeared in 讃美歌 (1903) — Meiji 36, > 120 years ago. Wikipedia ja quotes the 1903 text in full |
+| 15 | ものみなこぞりて | All Creatures of Our God and King (St. Francis of Assisi's Canticle of the Sun) | Nakayama Masaki 中山昌樹 (1886–1944) | St. Francis of Assisi (1181–1226) | Tune "Lasst uns erfreuen" from Geistliche Kirchengesäng, Köln (1623) | 1931 | St. Francis (d. 1226) and the 1623 tune are PD by > 400 years. Translator died 1944 (> 70 years). Wikipedia ja quotes the Nakayama translation in full |
 
 ## English public-domain hymns
 
