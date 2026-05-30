@@ -108,7 +108,7 @@ export function HymnEditor({ hymn, onDone, onCancel }: Props) {
         <ChordProHelp />
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3">
+      <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <button
             type="button"

@@ -54,6 +54,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -66,7 +67,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col relative">
+      <body
+        className="min-h-full flex flex-col relative"
+        style={{
+          paddingLeft: "env(safe-area-inset-left)",
+          paddingRight: "env(safe-area-inset-right)",
+        }}
+      >
         <AmbientMotif />
         <RippleEffect />
         <SWRegister />

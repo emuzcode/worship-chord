@@ -120,8 +120,8 @@ export function HymnView({ hymn }: Props) {
   }, [html]);
 
   return (
-    <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-32">
-      <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop flex items-start justify-between gap-3">
+    <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-[calc(8rem+env(safe-area-inset-bottom))]">
+      <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop flex items-start justify-between gap-3 sticky top-0 z-20 bg-background/85 backdrop-blur-sm">
         <div className="flex-1 min-w-0">
           <h1 className="text-3xl font-bold tracking-tight font-serif">
             {hymn.metadata.title}
@@ -160,7 +160,7 @@ export function HymnView({ hymn }: Props) {
 
       <ChordPopup chord={popupChord} onClose={() => setPopupChord(null)} />
 
-      <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 z-30">
+      <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] z-30">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <ThemeToggle />
           <button
