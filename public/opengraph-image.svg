@@ -1,54 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <rect width="1200" height="630" fill="#0a0a0a"/>
 
-  <!-- Central kanji "賛" -->
-  <text
-    x="600"
-    y="335"
-    font-family="'Hiragino Sans','Yu Gothic','Noto Sans CJK JP','Noto Sans JP',sans-serif"
-    font-size="360"
-    font-weight="700"
-    fill="#fbbf24"
-    text-anchor="middle"
-    dominant-baseline="central"
-  >賛</text>
-
-  <!-- Top: English title -->
-  <text
-    x="600"
-    y="90"
-    font-family="ui-monospace, 'SFMono-Regular', Menlo, monospace"
-    font-size="60"
-    font-weight="700"
-    fill="#ffffff"
-    text-anchor="middle"
-    letter-spacing="2"
-  >worship-chord</text>
-
-  <!-- Bottom: tagline -->
-  <text
-    x="600"
-    y="590"
-    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
-    font-size="30"
-    fill="#ffffff"
-    opacity="0.7"
-    text-anchor="middle"
-  >Japanese hymns shared with the world</text>
-
-  <!-- Sparse chord decorations around the kanji, rotated slightly -->
-  <g font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="48" font-weight="700" fill="#fbbf24" opacity="0.55">
-    <text x="200" y="260" transform="rotate(-12 200 260)">[G]</text>
-    <text x="1000" y="240" transform="rotate(10 1000 240)">[C]</text>
-    <text x="220" y="450" transform="rotate(8 220 450)">[D]</text>
-    <text x="980" y="470" transform="rotate(-14 980 470)">[Em]</text>
+  <!-- Subtle Chladni nodal pattern in background -->
+  <g stroke="#fbbf24" fill="none" opacity="0.18">
+    <circle cx="600" cy="315" r="280" stroke-width="1.6"/>
+    <path d="M 600 35 Q 720 175 600 315 Q 480 175 600 35 Z" stroke-width="1.4"/>
+    <path d="M 600 595 Q 720 455 600 315 Q 480 455 600 595 Z" stroke-width="1.4"/>
+    <path d="M 320 315 Q 460 435 600 315 Q 460 195 320 315 Z" stroke-width="1.4"/>
+    <path d="M 880 315 Q 740 435 600 315 Q 740 195 880 315 Z" stroke-width="1.4"/>
   </g>
 
-  <!-- Hairline geometric flourishes (subtle) -->
-  <g stroke="#ffffff" stroke-width="1" fill="none" opacity="0.18">
-    <circle cx="150" cy="150" r="36"/>
-    <line x1="186" y1="170" x2="280" y2="220"/>
-    <line x1="950" y1="540" x2="1060" y2="520"/>
-    <line x1="1050" y1="510" x2="1050" y2="560"/>
+  <!-- MIZMOR built-style wordmark, scaled from 240x60 viewBox to fit center -->
+  <g transform="translate(170 200) scale(3.6)" stroke="#fbbf24" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- M sine -->
+    <path d="M 6 50 Q 14 10 22 50 Q 30 10 38 50" stroke-width="3.2"/>
+    <!-- I stem + head -->
+    <line x1="50" y1="8" x2="50" y2="48" stroke-width="3.2"/>
+    <ellipse cx="48" cy="50" rx="5" ry="3.5" fill="#fbbf24" stroke="none" transform="rotate(-22 48 50)"/>
+    <!-- Z sawtooth -->
+    <path d="M 66 16 L 96 16 L 66 50 L 96 50" stroke-width="3.2"/>
+    <!-- M sine -->
+    <path d="M 108 50 Q 116 10 124 50 Q 132 10 140 50" stroke-width="3.2"/>
+    <!-- O cymatic rings -->
+    <circle cx="170" cy="32" r="18" stroke-width="3.2"/>
+    <circle cx="170" cy="32" r="12" stroke-width="0.8" opacity="0.55"/>
+    <circle cx="170" cy="32" r="6" stroke-width="0.7" opacity="0.4"/>
+    <!-- R arc + diagonal -->
+    <path d="M 200 50 L 200 16 L 218 16 Q 228 16 228 24 Q 228 32 218 32 L 200 32" stroke-width="3.2"/>
+    <line x1="218" y1="32" x2="232" y2="50" stroke-width="3.2"/>
   </g>
+
+  <!-- Hebrew script -->
+  <text x="600" y="490" text-anchor="middle" font-family="'Frank Ruhl Libre', serif" font-size="48" fill="#fbbf24" opacity="0.55" letter-spacing="2">מִזְמוֹר</text>
+
+  <!-- Italic tagline -->
+  <text x="600" y="552" text-anchor="middle" font-family="'Lora', Georgia, serif" font-style="italic" font-size="30" fill="#f7f7f5" opacity="0.7">A song struck on strings.</text>
+
+  <!-- worship-chord caption -->
+  <text x="600" y="600" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="13" fill="#f7f7f5" opacity="0.35" letter-spacing="8">WORSHIP-CHORD</text>
 </svg>
