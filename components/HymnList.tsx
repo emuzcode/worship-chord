@@ -249,7 +249,7 @@ function HymnListInner({ pdHymns }: Props) {
           </span>
           <Link
             href="/my"
-            className="px-4 py-2 rounded-md border border-accent/60 text-accent hover:bg-accent/10 active:scale-95 transition-all text-sm"
+            className="px-4 py-2 rounded-md border border-foreground/20 text-foreground/80 hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all text-sm"
           >
             My Songs →
           </Link>
