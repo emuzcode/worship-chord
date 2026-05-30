@@ -80,9 +80,18 @@ function HymnListInner({ pdHymns }: Props) {
   }, [combined]);
 
   const visible: Hymn[] = useMemo(() => {
-    if (category === "all") return combined;
-    return combined.filter((h) => classifyHymn(h) === category);
-  }, [combined, category]);
+    if (category !== "all") {
+      return combined.filter((h) => classifyHymn(h) === category);
+    }
+    // In the All view, hymns already promoted into the Favorites or Recent
+    // rows above are dropped from the main list so the same card isn't shown
+    // two or three times. Language filters keep their full subset because
+    // hiding entries there would silently shrink an already-narrow view.
+    const shownAbove = new Set<string>();
+    bookmarkSlugs.forEach((s) => shownAbove.add(s));
+    recentSlugs.slice(0, 5).forEach((s) => shownAbove.add(s));
+    return combined.filter((h) => !shownAbove.has(h.metadata.x_slug));
+  }, [combined, category, bookmarkSlugs, recentSlugs]);
 
   // Map recent slugs to their hymn objects, preserving recent order.
   const recentHymns: Hymn[] = useMemo(() => {
