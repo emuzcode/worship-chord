@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Angels We Have Heard on High",
+    "subtitle": "Les Anges dans nos campagnes — Gloria in excelsis Deo",
+    "composer": "Traditional French carol, melody \"Gloria\" arranged by Edward Shippen Barnes (1887–1958, US PD)",
+    "lyricist": "Anonymous French original (publ. 1805); English paraphrase by James Chadwick (1813–1882)",
+    "year": 1862,
+    "key": "F",
+    "time": "4/4",
+    "tempo": 92,
+    "x_slug": "angels-we-have-heard-on-high",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Anonymous French original (publ. 1805) and James Chadwick's English paraphrase (d. 1882) are PD by > 140 years. The traditional \"Gloria\" tune is also PD. Lyrics from English Wikipedia",
+    "x_translator": "N/A (English original by Chadwick paraphrasing French)",
+    "x_translator_death_year": 1882,
+    "x_source_url": "https://en.wikipedia.org/wiki/Angels_We_Have_Heard_on_High"
+  },
+  "chordpro": "{title: Angels We Have Heard on High}\n{subtitle: James Chadwick paraphrase of \"Les Anges dans nos campagnes\" (1862)}\n{key: F}\n{time: 4/4}\n{tempo: 92}\n{comment: The chorus features the famous melismatic \"Gloria\" — 16 notes on one syllable.}\n\n{start_of_verse: 1}\n[F]Angels we have [C]heard on [F]high\n[F]Sweetly [Bb]singing [C]o'er the [F]plains\n[F]And the [Dm]mountains [Am]in re[Dm]ply\n[Bb]Echoing [F]their [C]joyous [F]strains\n{end_of_verse}\n\n{start_of_chorus}\n[F]Glo[Dm]ri[Bb]a[Dm], [F]in ex[Bb]cel[C]sis [F]De[C]o\n[F]Glo[Dm]ri[Bb]a[Dm], [F]in ex[Bb]cel[C]sis [F]De[C]o[F]\n{end_of_chorus}\n\n{start_of_verse: 2}\n[F]Shepherds, why this [C]jubi[F]lee?\n[F]Why your [Bb]joyous [C]strains pro[F]long?\n[F]What the [Dm]glad[Am]some [Dm]tidings be\n[Bb]Which in[F]spire your [C]heavenly [F]song?\n{end_of_verse}\n\n{start_of_verse: 3}\n[F]Come to Bethle[C]hem and [F]see\n[F]Him whose [Bb]birth the [C]angels [F]sing\n[F]Come, a[Dm]dore [Am]on [Dm]bended knee\n[Bb]Christ the [F]Lord, the [C]newborn [F]King\n{end_of_verse}\n\n{start_of_verse: 4}\n[F]See within a [C]manger [F]laid\n[F]Jesus, [Bb]Lord of [C]heaven and [F]earth\n[F]Mary, [Dm]Joseph, [Am]lend [Dm]your aid\n[Bb]While our [F]hearts in [C]love we [F]raise\n{end_of_verse}\n"
+}

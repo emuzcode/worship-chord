@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "O Come, All Ye Faithful",
+    "subtitle": "Adeste Fideles — English (Frederick Oakeley, 1841)",
+    "composer": "John Francis Wade (c. 1711–1786), tune \"Adeste Fideles\"",
+    "lyricist": "John Francis Wade (Latin, 1751); English translation by Frederick Oakeley (1802–1880)",
+    "year": 1841,
+    "key": "G",
+    "time": "4/4",
+    "tempo": 88,
+    "x_slug": "o-come-all-ye-faithful",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Wade's Latin original (d. 1786) and Oakeley's English translation (d. 1880) are PD by > 140 years",
+    "x_translator": "Frederick Oakeley (English) — paired with 神の御子は今宵しも (Japanese)",
+    "x_translator_death_year": 1880,
+    "x_source_url": "https://en.wikipedia.org/wiki/O_Come,_All_Ye_Faithful"
+  },
+  "chordpro": "{title: O Come, All Ye Faithful}\n{subtitle: Adeste Fideles — English tr. Frederick Oakeley, 1841}\n{key: G}\n{time: 4/4}\n{tempo: 88}\n{comment: Pair with 神の御子は今宵しも (Japanese translation by 讃美歌 1903/1954 committee).}\n\n{start_of_verse: 1}\n[G]O come, all ye [D]faithful,\n[Em]Joyful and tri[D]umphant!\n[G]O come ye, O [C]come ye to [D]Bethle[G]hem;\n[G]Come and be[D]hold Him\n[Em]Born the King of [D]Angels:\n{end_of_verse}\n\n{start_of_chorus}\n[G]O come, let us a[D]dore Him,\n[Em]O come, let us a[D]dore Him,\n[G]O come, let us a[C]dore [D]Him,\n[G]Christ the [D]Lord.\n{end_of_chorus}\n\n{start_of_verse: 2}\n[G]God of God, [D]light of light,\n[Em]Lo, he abhors not the [D]Virgin's womb;\n[G]Very God, be[C]gotten, not cre[D]a[G]ted:\n{end_of_verse}\n\n{start_of_verse: 3}\n[G]Sing, choirs of [D]angels,\n[Em]Sing in exul[D]tation,\n[G]Sing, all ye [C]citizens of [D]Heaven a[G]bove!\n[G]Glory to [D]God,\n[Em]Glory in the [D]highest:\n{end_of_verse}\n\n{start_of_verse: 4}\n[G]Yea, Lord, we [D]greet thee,\n[Em]Born this happy [D]morning;\n[G]Jesus, to [C]thee be [D]glory [G]given!\n[G]Word of the [D]Father,\n[Em]Now in flesh ap[D]pearing!\n{end_of_verse}\n"
+}

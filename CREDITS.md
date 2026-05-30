@@ -22,6 +22,7 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 | 12 | 聖なる聖なる聖なるかな | Holy, Holy, Holy, Lord God Almighty | Hugh J. Foss (ヒウ・ゼ・フヲス) ed., 聖公会讃美歌 (1891), at the time titled 「いときよきかな」 | Reginald Heber (1783–1826) | John B. Dykes (1823–1876), tune "Nicaea" | 1891 | First Japanese translation appeared in 聖公会讃美歌 (Meiji 24, 1891) no. 96 — > 130 years ago. Wikisource ja hosts the full PD text |
 | 13 | エサイの根より | Es ist ein Ros entsprungen | Nakayama Masaki 中山昌樹 (1886–1944) | Anonymous 15th-century German hymn | Michael Praetorius (1571–1621), harmonization from *Musae Sioniae* (1609) | 1931 | Translator died 1944 (> 70 years); the German hymn and Praetorius's harmonization are PD by > 400 years. Wikipedia ja quotes the Nakayama translation in full |
 | 14 | 神はわがやぐら | Ein feste Burg ist unser Gott (Luther) | Editorial committee of 讃美歌 (1903) | Martin Luther (1483–1546) | Martin Luther (1483–1546) | 1903 | Luther's original is > 470 years old. Translation appeared in 讃美歌 (1903) — Meiji 36, > 120 years ago. Wikipedia ja quotes the 1903 text in full |
+| 15 | ものみなこぞりて | All Creatures of Our God and King (St. Francis of Assisi's Canticle of the Sun) | Nakayama Masaki 中山昌樹 (1886–1944) | St. Francis of Assisi (1181–1226) | Tune "Lasst uns erfreuen" from Geistliche Kirchengesäng, Köln (1623) | 1931 | St. Francis (d. 1226) and the 1623 tune are PD by > 400 years. Translator died 1944 (> 70 years). Wikipedia ja quotes the Nakayama translation in full |
 
 ## English public-domain hymns
 
@@ -34,6 +35,54 @@ Included as reference and cultural background — many are the originals of Japa
 | 3 | It Is Well with My Soul | Horatio Spafford (1828–1888) | Philip Bliss (1838–1876) | 1873 | US Copyright Office 1978 determination of PD |
 | 4 | Holy, Holy, Holy! | Reginald Heber (1783–1826) | John B. Dykes (1823–1876) | 1826 / 1861 | Authors died > 150 years ago |
 | 5 | Great Is Thy Faithfulness | Thomas Chisholm (1866–1960) | William Runyan (1870–1957) | 1923 | Entered US PD in 2019 (95-year rule) |
+| 6 | We Three Kings | John Henry Hopkins Jr. (1820–1891) | John Henry Hopkins Jr. (1820–1891) | 1857 | Author/composer died > 130 years ago |
+| 7 | Angels We Have Heard on High | Anonymous French + James Chadwick (1813–1882) | Traditional French "Gloria" | 1862 | Chadwick died > 140 years ago; French original is anonymous and PD |
+| 8 | I Heard the Bells on Christmas Day | Henry Wadsworth Longfellow (1807–1882) | John Baptiste Calkin (1827–1905), tune "Waltham" | 1863 | Authors died > 100 years ago |
+| 9 | O Come, All Ye Faithful | John Francis Wade (Latin); Frederick Oakeley (English, 1841) | John Francis Wade (c. 1711–1786) | 1841 | Wade and Oakeley both PD; pairs with 神の御子は今宵しも |
+| 10 | Hark! The Herald Angels Sing | Charles Wesley (1707–1788) | Felix Mendelssohn (1809–1847) | 1739 | Authors died > 150 years ago; pairs with 天にはさかえ |
+| 11 | O Little Town of Bethlehem | Phillips Brooks (1835–1893) | Lewis Redner (1831–1908), tune "St. Louis" | 1868 | Authors died > 100 years ago; pairs with ああベツレヘムよ |
+| 12 | Joy to the World | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Antioch" | 1719 | Authors died > 150 years ago; pairs with たみみなよろこべ / もろびとこぞりて |
+| 13 | A Mighty Fortress Is Our God | Martin Luther (1483–1546); Frederic Henry Hedge tr. (1853) | Martin Luther | 1853 | Luther > 470 yrs; Hedge (d. 1890) > 130 yrs. Pairs with 神はわがやぐら |
+| 14 | O Holy Night | Placide Cappeau (French); John Sullivan Dwight (English tr.) | Adolphe Adam (1803–1856) | 1855 | Adam, Cappeau, and Dwight all died > 100 years ago |
+| 15 | The First Noel | Anonymous (English traditional) | Anonymous English traditional | 1823 | Anonymous traditional carol, first published 1823 |
+| 16 | Silent Night | Joseph Mohr (German); John Freeman Young (English tr.) | Franz Xaver Gruber (1787–1863) | 1859 | Mohr (d. 1848), Gruber (d. 1863), Young (d. 1885) all > 130 years post-mortem |
+| 17 | O Sacred Head, Now Wounded | Bernard of Clairvaux → Gerhardt → J. W. Alexander (English, 1830) | Hans Leo Hassler (1564–1612), Bach harmonization | 1830 | All contributors died > 160 years ago |
+| 18 | All Hail the Power of Jesus' Name | Edward Perronet (1721–1792) | Oliver Holden (1765–1844), tune "Coronation" | 1779 | Authors died > 180 years ago |
+| 19 | Christ the Lord Is Risen Today | Charles Wesley (1707–1788) | Anonymous, "Easter Hymn" from *Lyra Davidica* (1708) | 1739 | Wesley died > 230 years ago |
+| 20 | When I Survey the Wondrous Cross | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Hamburg" | 1707 | Watts died > 275 years ago |
+| 21 | Rock of Ages | Augustus Toplady (1740–1778) | Thomas Hastings (1784–1872), tune "Toplady" | 1776 | Toplady died > 240 years ago |
+| 22 | Crown Him with Many Crowns | Matthew Bridges (1800–1894) & Godfrey Thring (1823–1903) | George J. Elvey (1816–1893), tune "Diademata" | 1851 | All > 120 years post-mortem |
+| 23 | For All the Saints | William Walsham How (1823–1897) | Ralph Vaughan Williams (1872–1958), tune "Sine Nomine" (1906) | 1864 | How d. 1897; tune publ. 1906, US PD via 95-year rule |
+| 24 | Praise to the Lord, the Almighty | Joachim Neander (1650–1680), tr. Catherine Winkworth (1827–1878) | Anonymous, tune "Lobe den Herren" from *Stralsund Gesangbuch* (1665) | 1863 | All > 140 years post-mortem |
+| 25 | Now Thank We All Our God | Martin Rinkart (1586–1649), tr. Catherine Winkworth (1827–1878) | Johann Crüger (1598–1662), tune "Nun danket alle Gott" | 1858 | All > 140 years post-mortem |
+| 26 | Of the Father's Love Begotten | Aurelius Prudentius (348–c. 413), tr. John Mason Neale (1818–1866) & Henry W. Baker (1821–1877) | Plainsong "Divinum Mysterium" (11th c.) | 1854 | Prudentius from 4th century; translators > 145 years post-mortem |
+
+## African American spirituals
+
+These spirituals predate or coincide with emancipation (1865) and have been in continuous traditional use. All are public domain.
+
+| # | Title | Origin | Composer/Lyricist | Published | PD basis |
+|---|---|---|---|---|---|
+| 1 | Swing Low, Sweet Chariot | African American spiritual, c. 1862 | Often attributed to Wallace Willis (c. 1820–c. 1880) | publ. 1872 (*Jubilee Songs*) | Traditional 19th-century spiritual, > 150 years |
+| 2 | Go Tell It on the Mountain | African American Christmas spiritual | Traditional; published by John W. Work II (1871–1925) | 1907 | Both song and Work II's compilation > 100 years |
+| 3 | Were You There? | African American Passion spiritual | Traditional, publ. *Old Plantation Hymns* by W. E. Barton (1899) | 1899 | First spiritual ever published in a major denominational hymnal; > 125 years |
+| 4 | Steal Away | African American spiritual, c. 1862 | Wallace Willis (c. 1820–c. 1880) | publ. 1870s by the Fisk Jubilee Singers | Traditional, > 150 years |
+| 5 | Joshua Fit the Battle of Jericho | African American spiritual | Traditional, publ. by Fisk Jubilee Singers | 1872 | Traditional, > 150 years |
+| 6 | Nobody Knows the Trouble I've Seen | African American spiritual | Traditional, publ. *Slave Songs of the United States* (1867) | 1867 | One of the earliest published spirituals, > 150 years |
+| 7 | Deep River | African American spiritual | Traditional, publ. *The Story of the Jubilee Singers* (1875) | 1875 | Traditional, > 145 years |
+| 8 | Down by the Riverside | African American spiritual / peace song | Traditional, publ. *Plantation Melodies* (1918) | 1918 | Traditional with antebellum origin; US PD via 95-year rule |
+
+## Celtic / Irish hymns
+
+| # | Title | Lyricist (translator if applicable) | Composer | Year | PD basis |
+|---|---|---|---|---|---|
+| 1 | I Bind Unto Myself Today (St. Patrick's Breastplate) | St. Patrick (c. 387–461) / English tr. Cecil Frances Alexander (1818–1895) | Irish traditional, arr. C. V. Stanford (1852–1924) | 1889 (tr.) / 1902 (arr.) | Original is 5th-century Old Irish; translator died 1895; arranger died 1924 — all PD |
+
+## Nordic hymns
+
+| # | Title | Lyricist (translator if applicable) | Composer | Year | PD basis |
+|---|---|---|---|---|---|
+| 1 | Be Still, My Soul | Katharina von Schlegel (b. 1697, German); English tr. Jane Borthwick (1813–1897) | Jean Sibelius (1865–1957), tune "Finlandia" (1899) | 1855 (tr.) / 1899 (tune) | Schlegel > 270 yrs; Borthwick d. 1897 (> 125 yrs); Finlandia is PD in the US (pre-1923 publication) |
 
 ## User-added songs
 

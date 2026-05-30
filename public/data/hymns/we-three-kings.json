@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "We Three Kings",
+    "subtitle": "Three Kings of Orient — Epiphany carol",
+    "composer": "John Henry Hopkins Jr. (1820–1891), tune \"Three Kings of Orient\"",
+    "lyricist": "John Henry Hopkins Jr. (1820–1891)",
+    "year": 1857,
+    "key": "Em",
+    "time": "3/4",
+    "tempo": 84,
+    "x_slug": "we-three-kings",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Hopkins wrote both text and tune in 1857, published 1863. He died 1891 — PD by > 130 years",
+    "x_translator": "N/A (English original)",
+    "x_translator_death_year": 1891,
+    "x_source_url": "https://en.wikipedia.org/wiki/We_Three_Kings"
+  },
+  "chordpro": "{title: We Three Kings}\n{subtitle: Three Kings of Orient — John Henry Hopkins Jr., 1857 (publ. 1863)}\n{key: Em}\n{time: 3/4}\n{tempo: 84}\n{comment: Epiphany carol. Verses 2–4 are solos for each king; verses 1 and 5 are sung together.}\n\n{start_of_verse: 1}\n[Em]We three [B7]kings of [Em]Orient [B7]are\n[Em]Bearing [B7]gifts we [Em]traverse a[B7]far\n[Am]Field and [D]fountain, [G]moor and [Em]mountain\n[Am]Following [B7]yonder [Em]star\n{end_of_verse}\n\n{start_of_chorus}\n[G]O [D]star of [G]wonder, [D]star of [G]night\n[Em]Star with [B7]royal [Em]beauty [B7]bright\n[Em]Westward [B7]leading, [Em]still pro[B7]ceeding\n[Am]Guide us [B7]to thy [Em]perfect [B7]light[Em]\n{end_of_chorus}\n\n{start_of_verse: 2}\n[Em]Born a [B7]King on [Em]Bethlehem's [B7]plain\n[Em]Gold I [B7]bring to [Em]crown Him a[B7]gain\n[Am]King for[D]ever, [G]ceasing [Em]never\n[Am]Over [B7]us all to [Em]reign\n{end_of_verse}\n\n{start_of_verse: 3}\n[Em]Frankin[B7]cense to [Em]offer have [B7]I\n[Em]Incense [B7]owns a [Em]Deity [B7]nigh\n[Am]Prayer and [D]praising, [G]all men [Em]raising\n[Am]Worship [B7]Him, God [Em]most high\n{end_of_verse}\n\n{start_of_verse: 4}\n[Em]Myrrh is [B7]mine; its [Em]bitter per[B7]fume\n[Em]Breathes a [B7]life of [Em]gathering [B7]gloom\n[Am]Sorrow[D]ing, sighing, [G]bleeding, [Em]dying\n[Am]Sealed in the [B7]stone-cold [Em]tomb\n{end_of_verse}\n\n{start_of_verse: 5}\n[Em]Glorious [B7]now be[Em]hold Him a[B7]rise\n[Em]King and [B7]God and [Em]sacri[B7]fice\n[Am]Allelu[D]ia, [G]Alle[Em]luia\n[Am]Earth to [B7]heaven re[Em]plies\n{end_of_verse}\n"
+}
