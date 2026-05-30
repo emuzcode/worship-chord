@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "貴きみかみよ",
+    "subtitle": "Aus tiefer Not (Luther) — Japanese (讃美歌, 1931), tr. Nakayama Masaki",
+    "composer": "Martin Luther (1483–1546)",
+    "lyricist": "Martin Luther (1483–1546), \"Aus tiefer Not schrei ich zu dir\" (1523) — Japanese translation by Nakayama Masaki 中山昌樹 (1886–1944)",
+    "year": 1931,
+    "key": "Am",
+    "time": "4/4",
+    "tempo": 64,
+    "x_slug": "toutoki-mikami-yo",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Luther's original German lyrics and tune (1523) are PD by > 470 years. Japanese translation by Nakayama Masaki (d. 1944) — > 70 years post-mortem, PD per Japanese copyright law. First published in 讃美歌 (1931) no. 250. Japanese Wikisource explicitly marks the translation as PD-old-50-1996",
+    "x_translator": "Nakayama Masaki 中山昌樹 (1886–1944)",
+    "x_translator_death_year": 1944,
+    "x_source_url": "https://ja.wikisource.org/wiki/%E8%B2%B4%E3%81%8D%E3%81%BF%E3%81%8B%E3%81%BF%E3%82%88"
+  },
+  "chordpro": "{title: 貴きみかみよ}\n{subtitle: Aus tiefer Not (Luther, 1523) — Japanese, 讃美歌 (1931) no. 250, tr. 中山昌樹}\n{key: Am}\n{time: 4/4}\n{tempo: 64}\n{comment: Luther's penitential psalm hymn (Psalm 130), \"Out of the depths I cry to you\"}\n\n{start_of_verse: 1}\n[Am]たふとき[Dm]みかみよ [G]なやみの[C]ふちより\ntautoki mikami yo, nayami no fuchi yori\n[Am]よばはる[Dm]わが身を [E]かへりみた[Am]まへや\nyobaharu waga mi wo, kaerimi tamae ya\n[Am]みゆるし[Dm]うけずば [G]きびしき[C]さばきに\nmiyurushi ukezuba, kibishiki sabaki ni\n[Am]たれかは[E]堪(た)ふべ[Am]き\ntare ka wa taubeki\n{end_of_verse}\n\n{start_of_verse: 2}\n[Am]世にある[Dm]人みな [G]ちからの[C]かぎりに\nyo ni aru hito mina, chikara no kagiri ni\n[Am]いそしみ[Dm]はげみて [E]ただしく[Am]生(い)くとも\nisoshimi hagemite, tadashiku iku tomo\n[Am]聖(せい)なる[Dm]みかみの [G]めぐみを[C]うくるに\nseinaru mikami no, megumi wo ukuru ni\n[Am]たれかは[E]足(た)るべ[Am]き\ntare ka wa taru beki\n{end_of_verse}\n\n{start_of_verse: 3}\n[Am]おのれの[Dm]わざには [G]すこしも[C]たよらず\nonore no waza ni wa, sukoshi mo tayorazu\n[Am]ひたすら[Dm]めぐみの [E]ちからを[Am]たのみて\nhitasura megumi no, chikara wo tanomite\n[Am]みことば[Dm]かしこみ [G]うたがふ[C]ことなく\nmikotoba kashikomi, utagau koto naku\n[Am]のぞみて[E]ゆるが[Am]じ\nnozomite yurugaji\n{end_of_verse}\n\n{start_of_verse: 4}\n[Am]わがつみ[Dm]あやまち [G]いとおほ[C]けれども\nwaga tsumi ayamachi, ito ookeredomo\n[Am]底(そこ)ひも[Dm]知られぬ [E]ふかきめ[Am]ぐみもて\nsokoi mo shirarenu, fukaki megumi mote\n[Am]イスラエ[Dm]ルびとを [G]すくひし[C]みかみは\nisuraeru bito wo, sukuishi mikami wa\n[Am]げにわが[E]牧者(ぼくしや)[Am]ぞ\ngeni waga bokusha zo\n{end_of_verse}\n"
+}

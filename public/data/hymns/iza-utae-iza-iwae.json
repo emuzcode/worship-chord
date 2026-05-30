@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "いざ歌えいざ祝え",
+    "subtitle": "O du fröhliche — Japanese (讃美歌, 1931), tr. Nakayama Masaki",
+    "composer": "Traditional Sicilian melody, anonymous (PD)",
+    "lyricist": "Johannes Falk (1768–1826) + Heinrich Holzschuher (1798–1847) — Japanese translation by Nakayama Masaki 中山昌樹 (1886–1944)",
+    "year": 1931,
+    "key": "G",
+    "time": "4/4",
+    "tempo": 76,
+    "x_slug": "iza-utae-iza-iwae",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Original German lyrics by Falk (d. 1826) and Holzschuher (d. 1847) are PD by > 150 years; melody is anonymous Sicilian tradition. Japanese translation by Nakayama Masaki (d. 1944) — > 70 years post-mortem, PD per Japanese copyright law. First published in 讃美歌 (1931) no. 94. Japanese Wikisource explicitly marks the translation as PD-old-50-1996",
+    "x_translator": "Nakayama Masaki 中山昌樹 (1886–1944)",
+    "x_translator_death_year": 1944,
+    "x_source_url": "https://ja.wikisource.org/wiki/%E3%81%84%E3%81%96%E6%AD%8C%E3%81%88%E3%81%84%E3%81%96%E7%A5%9D%E3%81%88"
+  },
+  "chordpro": "{title: いざ歌えいざ祝え}\n{subtitle: O du fröhliche — Japanese, 讃美歌 (1931) no. 94, tr. 中山昌樹}\n{key: G}\n{time: 4/4}\n{tempo: 76}\n\n{start_of_verse: 1}\n[G]いざうた[D]へ [G]いざい[D]はえ\niza utae, iza iwae\n[G]うれしき[D]こ[G]のよひ [C]すくひ[D]ぬし\nureshiki kono yoi, sukui nushi\n[G]あれま[Em]し[Am]ぬ [D]いざほめた[G]たへよ\nare mashinu, iza home tataeyo\n{end_of_verse}\n\n{start_of_verse: 2}\n[G]いざうた[D]へ [G]いざい[D]はえ\niza utae, iza iwae\n[G]たのしき[D]こ[G]のよひ [C]かみの[D]みこ\ntanoshiki kono yoi, kami no miko\n[G]あらは[Em]れ[Am]ぬ [D]いざほめた[G]たへよ\narawarenu, iza home tataeyo\n{end_of_verse}\n\n{start_of_verse: 3}\n[G]いざうた[D]へ [G]いざい[D]はえ\niza utae, iza iwae\n[G]きよけき[D]こ[G]のよひ [C]あれま[D]しし\nkiyokeki kono yoi, are mashishi\n[G]みどり[Em]ご[Am]を [D]いざほめた[G]たへよ\nmidorigo wo, iza home tataeyo\n{end_of_verse}\n"
+}
