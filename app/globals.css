@@ -89,12 +89,13 @@ a {
   animation: fade-up 400ms ease-out both;
 }
 
-/* Ambient hairline motif spawn animation (draws then fades) */
+/* Ambient hairline motif spawn animation — drawing motion runs the entire life,
+ * fade-out starts as soon as fade-in completes so there is no static interval.
+ * Net effect: the stroke is always being drawn and always slowly fading.
+ */
 @keyframes draw-fade-spawn {
   0%   { stroke-dashoffset: var(--dash, 400); opacity: 0; }
-  18%  { opacity: var(--hairline-opacity); }
-  60%  { stroke-dashoffset: 0; opacity: var(--hairline-opacity); }
-  88%  { opacity: var(--hairline-opacity); }
+  20%  { opacity: var(--hairline-opacity); }
   100% { stroke-dashoffset: 0; opacity: 0; }
 }
 

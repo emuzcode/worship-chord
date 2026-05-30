@@ -37,8 +37,8 @@ export type MotifFn = (g: SVGGElement) => number;
 // =====================================================
 
 const concentric: MotifFn = (g) => {
-  const rings = Math.floor(rand(3, 6));
-  const base = rand(8, 16);
+  const rings = Math.floor(rand(2, 8));
+  const base = rand(6, 30);
   let len = 0;
   for (let i = 0; i < rings; i++) {
     const r = base * (i + 1);
@@ -49,9 +49,9 @@ const concentric: MotifFn = (g) => {
 };
 
 const sineWave: MotifFn = (g) => {
-  const width = rand(60, 140);
-  const amp = rand(6, 16);
-  const periods = rand(2, 4);
+  const width = rand(40, 220);
+  const amp = rand(4, 30);
+  const periods = rand(2, 5);
   const steps = 40;
   let d = "";
   for (let i = 0; i <= steps; i++) {
@@ -64,7 +64,7 @@ const sineWave: MotifFn = (g) => {
 };
 
 const lissajous: MotifFn = (g) => {
-  const size = rand(28, 60);
+  const size = rand(14, 100);
   const a = pick([1, 2, 3, 3] as const);
   const b = pick([2, 3, 4, 5] as const);
   const phase = rand(0, Math.PI);
@@ -81,9 +81,9 @@ const lissajous: MotifFn = (g) => {
 };
 
 const radialBurst: MotifFn = (g) => {
-  const spokes = Math.floor(rand(8, 18));
-  const inner = rand(4, 10);
-  const outer = inner + rand(16, 36);
+  const spokes = Math.floor(rand(6, 24));
+  const inner = rand(2, 20);
+  const outer = inner + rand(16, 60);
   let len = 0;
   for (let i = 0; i < spokes; i++) {
     const a = (Math.PI * 2 * i) / spokes;
@@ -99,22 +99,22 @@ const radialBurst: MotifFn = (g) => {
 };
 
 const phyllotaxis: MotifFn = (g) => {
-  const points = Math.floor(rand(20, 45));
-  const c = rand(2.4, 3.2);
+  const points = Math.floor(rand(12, 80));
+  const c = rand(1.8, 4.5);
   const golden = Math.PI * (3 - Math.sqrt(5));
   for (let i = 0; i < points; i++) {
     const r = c * Math.sqrt(i);
     const a = i * golden;
     const x = Math.cos(a) * r;
     const y = Math.sin(a) * r;
-    makeEl("circle", { cx: x, cy: y, r: 0.8, class: "dot" }, g);
+    makeEl("circle", { cx: x, cy: y, r: rand(0.6, 1.4), class: "dot" }, g);
   }
   return points * 5 + 20;
 };
 
 const standingWave: MotifFn = (g) => {
-  const width = rand(70, 130);
-  const amp = rand(8, 16);
+  const width = rand(40, 200);
+  const amp = rand(4, 30);
   const steps = 32;
   let dUp = "",
     dDown = "";
@@ -142,7 +142,7 @@ const standingWave: MotifFn = (g) => {
 // =====================================================
 
 const cross: MotifFn = (g) => {
-  const h = rand(30, 56);
+  const h = rand(20, 100);
   const w = h * 0.62;
   const armY = -h * 0.18;
   makeEl("line", { x1: 0, y1: -h / 2, x2: 0, y2: h / 2 }, g);
@@ -151,7 +151,7 @@ const cross: MotifFn = (g) => {
 };
 
 const vesicaPiscis: MotifFn = (g) => {
-  const r = rand(20, 38);
+  const r = rand(12, 60);
   const d = r * 0.85;
   makeEl("circle", { cx: -d / 2, cy: 0, r }, g);
   makeEl("circle", { cx: d / 2, cy: 0, r }, g);
@@ -159,7 +159,7 @@ const vesicaPiscis: MotifFn = (g) => {
 };
 
 const trinity: MotifFn = (g) => {
-  const s = rand(28, 48);
+  const s = rand(18, 80);
   const h = (s * Math.sqrt(3)) / 2;
   const pts: [number, number][] = [
     [0, (-h * 2) / 3],
@@ -178,7 +178,7 @@ const trinity: MotifFn = (g) => {
 };
 
 const chiRho: MotifFn = (g) => {
-  const s = rand(20, 38);
+  const s = rand(14, 60);
   makeEl("line", { x1: -s, y1: -s, x2: s, y2: s }, g);
   makeEl("line", { x1: -s, y1: s, x2: s, y2: -s }, g);
   makeEl("line", { x1: 0, y1: -s * 1.2, x2: 0, y2: s * 1.2 }, g);
@@ -187,8 +187,8 @@ const chiRho: MotifFn = (g) => {
 };
 
 const roseWindow: MotifFn = (g) => {
-  const r = rand(28, 46);
-  const petals = pick([6, 8, 12] as const);
+  const r = rand(18, 80);
+  const petals = pick([6, 8, 12, 16] as const);
   makeEl("circle", { cx: 0, cy: 0, r }, g);
   makeEl("circle", { cx: 0, cy: 0, r: r * 0.45 }, g);
   for (let i = 0; i < petals; i++) {
@@ -203,9 +203,9 @@ const roseWindow: MotifFn = (g) => {
 };
 
 const menorah: MotifFn = (g) => {
-  const w = rand(40, 64);
-  const armH = rand(14, 22);
-  const stemH = armH + rand(10, 18);
+  const w = rand(24, 120);
+  const armH = rand(8, 40);
+  const stemH = armH + rand(8, 32);
   const arms = 7;
   const baseY = stemH;
   const tipY = -armH;
@@ -226,7 +226,7 @@ const menorah: MotifFn = (g) => {
 };
 
 const celticCross: MotifFn = (g) => {
-  const h = rand(32, 52);
+  const h = rand(20, 80);
   const w = h * 0.7;
   const ringR = h * 0.32;
   makeEl("line", { x1: 0, y1: -h / 2, x2: 0, y2: h / 2 }, g);
@@ -236,7 +236,7 @@ const celticCross: MotifFn = (g) => {
 };
 
 const dove: MotifFn = (g) => {
-  const s = rand(18, 28);
+  const s = rand(14, 44);
   makeEl(
     "line",
     { x1: -s * 1.6, y1: 0, x2: -s * 0.3, y2: -s * 0.3 },
@@ -270,13 +270,13 @@ const dove: MotifFn = (g) => {
 // =====================================================
 
 const circle: MotifFn = (g) => {
-  const r = rand(18, 56);
+  const r = rand(12, 90);
   makeEl("circle", { cx: 0, cy: 0, r }, g);
   return 2 * Math.PI * r + 20;
 };
 
 const hex: MotifFn = (g) => {
-  const s = rand(14, 26);
+  const s = rand(10, 50);
   let len = 0;
   const pts: [number, number][] = [];
   for (let i = 0; i < 6; i++) {
@@ -300,7 +300,7 @@ const hex: MotifFn = (g) => {
 };
 
 const triGrid: MotifFn = (g) => {
-  const s = rand(16, 24);
+  const s = rand(10, 40);
   let len = 0;
   const offsets: [number, number][] = [
     [0, 0],
@@ -322,13 +322,14 @@ const triGrid: MotifFn = (g) => {
 };
 
 const lineCluster: MotifFn = (g) => {
-  const count = Math.floor(rand(3, 7));
+  const count = Math.floor(rand(3, 12));
+  const spread = rand(40, 140);
   let len = 0;
   for (let i = 0; i < count; i++) {
-    const x1 = rand(-50, 50),
-      y1 = rand(-30, 30);
-    const x2 = x1 + rand(-60, 60),
-      y2 = y1 + rand(-60, 60);
+    const x1 = rand(-spread, spread),
+      y1 = rand(-spread * 0.6, spread * 0.6);
+    const x2 = x1 + rand(-spread, spread),
+      y2 = y1 + rand(-spread, spread);
     makeEl("line", { x1, y1, x2, y2 }, g);
     len += Math.hypot(x2 - x1, y2 - y1);
   }
@@ -339,9 +340,9 @@ const annotation: MotifFn = (g) => {
   // CAD-style note: a dot + lead line + small perpendicular tick
   const accent = Math.random() < 0.6;
   const cls = accent ? "accent" : "";
-  const r = 5;
+  const r = rand(4, 12);
   makeEl("circle", { cx: 0, cy: 0, r, class: "dot" + (accent ? " accent" : "") }, g);
-  const len = rand(28, 70);
+  const len = rand(20, 120);
   makeEl(
     "line",
     { x1: r, y1: 0, x2: r + len, y2: 0, class: cls },
