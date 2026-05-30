@@ -9,6 +9,7 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 | # | Title | Original | Translator | Original lyrics | Composer | Year (translation) | PD basis |
 |---|---|---|---|---|---|---|---|
 | 1 | 主われを愛す | Jesus Loves Me, This I Know | Julia N. Crosby (1833–1918) | Anna B. Warner (1822–1915) | William B. Bradbury (1816–1868) | 1872 | Translator died 1918 (> 70 years); original authors died > 100 years ago |
+| 2 | いつくしみ深き | What a Friend We Have in Jesus | Editorial committee of 新撰讃美歌 (1888): Okuno Masatsuna (1823–1910), Uemura Masahisa (1858–1925), Matsuyama Takayoshi (1846–1935) | Joseph M. Scriven (1819–1886) | Charles C. Converse (1832–1918) | 1888 | All three Japanese editors died > 70 years ago (latest 1935); original authors died > 100 years ago |
 
 ## English public-domain hymns
 
