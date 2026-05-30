@@ -129,33 +129,42 @@ function HymnListInner({ pdHymns }: Props) {
   }
 
   return (
-    <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
-      <header className="mb-8 flex items-start justify-between gap-4">
-        <div className="flex items-start gap-3 min-w-0">
-          <BrandMark
-            size={44}
-            className="text-accent flex-shrink-0 mt-[2px]"
-          />
-          <div className="min-w-0">
-            <h1 className="text-3xl font-bold tracking-tight font-serif">
-              worship-chord
-            </h1>
-            <p className="text-sm opacity-70 mt-1">
-              Japanese hymns, for the world to sing.
-            </p>
-            <p className="text-xs opacity-50 mt-0.5">
-              Chord sheets with romaji · {counts.all} public-domain songs ·
-              non-commercial
-            </p>
-          </div>
-        </div>
+    <main className="flex-1 w-full max-w-3xl mx-auto px-4 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
+      <section
+        aria-labelledby="brand-heading"
+        className="text-center pt-14 pb-16 sm:pt-24 sm:pb-24"
+      >
+        <h1 id="brand-heading" className="inline-block text-accent">
+          <BrandMark className="mx-auto w-[240px] sm:w-[360px] h-auto" />
+          <span className="sr-only">MIZMOR — worship-chord</span>
+        </h1>
+        <p
+          lang="he"
+          className="font-serif text-2xl opacity-55 mt-8 select-all"
+          aria-hidden="true"
+        >
+          מִזְמוֹר
+        </p>
+        <p className="font-serif italic text-base opacity-70 mt-3 max-w-md mx-auto">
+          A song struck on strings.
+        </p>
+        <div className="mt-12 h-px w-16 mx-auto bg-foreground/15" />
+        <p className="text-[10px] tracking-[0.25em] uppercase opacity-40 mt-8">
+          ↓ Browse the hymns
+        </p>
+      </section>
+
+      <div className="flex items-baseline justify-between mb-4">
+        <p className="text-xs opacity-50 font-mono">
+          {counts.all} hymns · public-domain · non-commercial
+        </p>
         <Link
           href="/my"
-          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap mt-1"
+          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity"
         >
           My Songs →
         </Link>
-      </header>
+      </div>
 
       <CategoryFilter value={category} counts={counts} onChange={setFilter} />
 
