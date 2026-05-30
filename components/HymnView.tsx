@@ -92,17 +92,16 @@ export function HymnView({ hymn }: Props) {
     const formatter = new HtmlDivFormatter();
     const renderedHtml = formatter.format(transposed);
 
-    // Extract unique chords from the rendered HTML so the palette reflects the
-    // current transposition. We pick from the actual `.chord` elements rather
-    // than the source chordpro because ChordSheetJS may normalize sharps/flats.
-    const tmp = typeof window !== "undefined" ? document.createElement("div") : null;
+    // Extract unique chords by parsing the rendered HTML with a regex so the
+    // result is identical between SSR (static export) and the first client
+    // render. Using `document.createElement` for this would resolve to
+    // different values during the two passes and trigger React #418
+    // (the SSR pass would build no ChordPalette, the client pass would).
     const set = new Set<string>();
-    if (tmp) {
-      tmp.innerHTML = renderedHtml;
-      tmp.querySelectorAll(".chord").forEach((el) => {
-        const t = el.textContent?.trim();
-        if (t) set.add(t);
-      });
+    const matches = renderedHtml.matchAll(/<div class="chord">([^<]*)<\/div>/g);
+    for (const m of matches) {
+      const t = m[1].trim();
+      if (t) set.add(t);
     }
 
     return {
