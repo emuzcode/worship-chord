@@ -3,13 +3,17 @@
 import { useMemo, useState } from "react";
 import { ChordProParser, HtmlDivFormatter } from "chordsheetjs";
 import type { Hymn } from "@/lib/types";
-import { WakeLockButton } from "./WakeLockButton";
+import { useWakeLock } from "@/lib/useWakeLock";
+import { ThemeToggle } from "./ThemeToggle";
 
 type Props = {
   hymn: Hymn;
 };
 
 export function HymnView({ hymn }: Props) {
+  // Keep the screen on while a hymn is being viewed.
+  useWakeLock();
+
   const [semitones, setSemitones] = useState(0);
 
   const { html, currentKey } = useMemo(() => {
@@ -26,7 +30,7 @@ export function HymnView({ hymn }: Props) {
 
   return (
     <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-32">
-      <header className="pt-6 pb-4 border-b border-white/10">
+      <header className="pt-6 pb-4 border-b border-foreground/10">
         <h1 className="text-3xl font-bold tracking-tight">{hymn.metadata.title}</h1>
         {hymn.metadata.subtitle && (
           <p className="text-lg opacity-70 mt-1">{hymn.metadata.subtitle}</p>
@@ -41,13 +45,13 @@ export function HymnView({ hymn }: Props) {
         dangerouslySetInnerHTML={{ __html: html }}
       />
 
-      <div className="fixed bottom-0 left-0 right-0 bg-[#0a0a0a]/95 backdrop-blur border-t border-white/10 px-4 py-3">
+      <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
-          <WakeLockButton />
+          <ThemeToggle />
           <button
             type="button"
             onClick={() => setSemitones((s) => s - 1)}
-            className="px-5 py-2 rounded-md border border-white/20 hover:bg-white/5 active:bg-white/10 transition-colors text-xl font-mono"
+            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 transition-colors text-xl font-mono"
             aria-label="Transpose down a semitone"
           >
             −
@@ -63,7 +67,7 @@ export function HymnView({ hymn }: Props) {
           <button
             type="button"
             onClick={() => setSemitones((s) => s + 1)}
-            className="px-5 py-2 rounded-md border border-white/20 hover:bg-white/5 active:bg-white/10 transition-colors text-xl font-mono"
+            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 transition-colors text-xl font-mono"
             aria-label="Transpose up a semitone"
           >
             ＋

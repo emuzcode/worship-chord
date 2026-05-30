@@ -16,7 +16,7 @@ export default async function Home() {
           <li key={hymn.metadata.x_slug}>
             <Link
               href={`/${hymn.metadata.x_slug}`}
-              className="block p-4 rounded-lg border border-white/10 hover:bg-white/5 active:bg-white/10 transition-colors"
+              className="block p-4 rounded-lg border border-foreground/10 hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
             >
               <h2 className="text-xl font-semibold">{hymn.metadata.title}</h2>
               <p className="text-sm opacity-60 mt-1">

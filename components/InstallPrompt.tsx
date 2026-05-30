@@ -35,12 +35,12 @@ export function InstallPrompt() {
   if (!show) return null;
 
   return (
-    <div className="fixed top-3 left-3 right-3 z-50 p-3 rounded-lg border border-amber-400/30 bg-[#0a0a0a]/90 backdrop-blur text-sm flex items-start gap-3 max-w-md mx-auto">
+    <div className="fixed top-3 left-3 right-3 z-50 p-3 rounded-lg border border-amber-500/40 bg-background/90 backdrop-blur text-sm flex items-start gap-3 max-w-md mx-auto">
       <div className="flex-1">
         <p className="font-semibold mb-1">Install worship-chord</p>
         <p className="opacity-80">
           Tap{" "}
-          <span className="font-mono inline-block px-1 rounded bg-white/10">
+          <span className="font-mono inline-block px-1 rounded bg-foreground/10">
             ↑ Share
           </span>{" "}
           in Safari, then &ldquo;Add to Home Screen&rdquo;.

@@ -1,24 +1,33 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
+  --color-bg: #ffffff;
+  --color-fg: #0a0a0a;
+  --color-chord: #b45309;
+}
+
+.dark {
+  --color-bg: #0a0a0a;
+  --color-fg: #ffffff;
+  --color-chord: #fbbf24;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-fg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-bg);
+  color: var(--color-fg);
   font-family: var(--font-sans), "Noto Sans JP", system-ui, sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +67,7 @@ a {
 .chord-sheet .chord {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--color-chord);
   font-size: 0.875rem;
   line-height: 1.2;
   min-height: 1.2em;
@@ -67,6 +76,7 @@ a {
 
 .chord-sheet .lyrics {
   font-family: var(--font-geist-sans), "Noto Sans JP", system-ui, sans-serif;
+  color: var(--color-fg);
   white-space: pre;
   font-size: 1.125rem;
   line-height: 1.4;
