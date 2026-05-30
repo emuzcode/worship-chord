@@ -13,6 +13,9 @@ import { db } from "@/lib/db";
 import { toggleBookmark } from "@/lib/bookmarks";
 import { vibrate } from "@/lib/haptic";
 import { useStickyCompact } from "@/lib/useStickyCompact";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { navigateWithTransition } from "@/lib/viewTransition";
 
 const HEADER_EXPANDED = 180;
 const HEADER_COMPACT = 56;
@@ -25,6 +28,7 @@ export function HymnView({ hymn }: Props) {
   // Keep the screen on while a hymn is being viewed.
   useWakeLock();
 
+  const router = useRouter();
   const [semitones, setSemitones] = useState(0);
   const [popupChord, setPopupChord] = useState<string | null>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
@@ -151,7 +155,21 @@ export function HymnView({ hymn }: Props) {
           maxHeight: `${compact ? HEADER_COMPACT : HEADER_EXPANDED}px`,
         }}
       >
-        <div className="pt-3 pb-2 flex items-start justify-between gap-3">
+        <div className="pt-3 pb-2 flex items-start justify-between gap-2">
+          <Link
+            href="/"
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) {
+                return;
+              }
+              e.preventDefault();
+              navigateWithTransition(() => router.push("/"));
+            }}
+            aria-label="Back to all hymns"
+            className="text-foreground/50 hover:text-foreground/80 text-xl leading-none px-2 py-2 -ml-2 rounded-md transition-colors active:scale-95 flex-shrink-0"
+          >
+            ←
+          </Link>
           <h1
             className={`font-bold tracking-tight font-serif flex-1 min-w-0 ${
               compact ? "text-xl truncate" : "text-3xl"
