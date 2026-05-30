@@ -129,7 +129,11 @@ function HymnListInner({ pdHymns }: Props) {
     if (!target) return;
     const observer = new IntersectionObserver(
       ([entry]) => setShowBottomNav(entry.isIntersecting),
-      { threshold: 0 }
+      // Shrink the viewport root by 120px from the bottom so the nav
+      // only fades in after the user has actually scrolled into the
+      // browse section, not when its top edge merely brushes the
+      // viewport boundary while the hero is still in full view.
+      { threshold: 0, rootMargin: "0px 0px -120px 0px" }
     );
     observer.observe(target);
     return () => observer.disconnect();
