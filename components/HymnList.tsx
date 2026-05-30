@@ -7,6 +7,7 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { listMyHymns } from "@/lib/myHymns";
 import type { Hymn } from "@/lib/types";
 import { CategoryFilter, type HymnCategory } from "./CategoryFilter";
+import { getRecent } from "@/lib/recent";
 
 const JP_CHAR = /[぀-ゟ゠-ヿ一-鿿]/;
 
@@ -45,6 +46,13 @@ function HymnListInner({ pdHymns }: Props) {
 
   const myHymns = useLiveQuery(() => listMyHymns(), []) ?? [];
 
+  // Recently-viewed slugs are read once on mount; the list is updated only when
+  // a hymn detail page records it (no need to re-read on every interaction).
+  const [recentSlugs, setRecentSlugs] = useState<string[]>([]);
+  useEffect(() => {
+    setRecentSlugs(getRecent());
+  }, []);
+
   const combined: Hymn[] = useMemo(() => {
     const my: Hymn[] = myHymns.map((h) => ({
       metadata: h.metadata,
@@ -66,6 +74,16 @@ function HymnListInner({ pdHymns }: Props) {
     if (category === "all") return combined;
     return combined.filter((h) => classifyHymn(h) === category);
   }, [combined, category]);
+
+  // Map recent slugs to their hymn objects, preserving recent order.
+  const recentHymns: Hymn[] = useMemo(() => {
+    if (recentSlugs.length === 0) return [];
+    const bySlug = new Map(combined.map((h) => [h.metadata.x_slug, h]));
+    return recentSlugs
+      .map((s) => bySlug.get(s))
+      .filter((h): h is Hymn => h !== undefined)
+      .slice(0, 5);
+  }, [combined, recentSlugs]);
 
   function setFilter(next: HymnCategory) {
     setCategory(next);
@@ -105,6 +123,31 @@ function HymnListInner({ pdHymns }: Props) {
       </header>
 
       <CategoryFilter value={category} counts={counts} onChange={setFilter} />
+
+      {category === "all" && recentHymns.length > 0 && (
+        <section aria-label="Recently viewed" className="mb-6">
+          <h2 className="text-[10px] font-mono uppercase tracking-[0.15em] opacity-50 mb-2">
+            Recent
+          </h2>
+          <ul className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory">
+            {recentHymns.map((h) => (
+              <li key={h.metadata.x_slug} className="snap-start flex-shrink-0">
+                <Link
+                  href={detailHref(h)}
+                  className="block w-[180px] p-3 rounded-lg border border-foreground/10 hover:bg-foreground/5 active:bg-foreground/10 transition-colors content-backdrop"
+                >
+                  <h3 className="text-sm font-semibold font-serif truncate">
+                    {h.metadata.title}
+                  </h3>
+                  <p className="text-[11px] opacity-60 mt-1 truncate">
+                    key {h.metadata.key}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {visible.length === 0 ? (
         <div className="opacity-60 text-center py-12 content-backdrop">

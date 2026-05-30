@@ -7,6 +7,7 @@ import { useWakeLock } from "@/lib/useWakeLock";
 import { ThemeToggle } from "./ThemeToggle";
 import { ChordPalette } from "./ChordPalette";
 import { ChordPopup } from "./ChordPopup";
+import { addRecent } from "@/lib/recent";
 
 type Props = {
   hymn: Hymn;
@@ -19,6 +20,36 @@ export function HymnView({ hymn }: Props) {
   const [semitones, setSemitones] = useState(0);
   const [popupChord, setPopupChord] = useState<string | null>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
+
+  // Hydrate semitones from the URL on mount so reload / share keeps transposition.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const raw = params.get("t");
+    if (!raw) return;
+    const n = Number(raw);
+    if (Number.isFinite(n) && n !== 0) setSemitones(n);
+  }, []);
+
+  // Remember this hymn in the recently-viewed list.
+  useEffect(() => {
+    if (hymn.metadata.x_slug) addRecent(hymn.metadata.x_slug);
+  }, [hymn.metadata.x_slug]);
+
+  // Persist semitones into the URL whenever the user transposes.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (semitones === 0) params.delete("t");
+    else params.set("t", String(semitones));
+    const qs = params.toString();
+    const next = qs
+      ? `${window.location.pathname}?${qs}`
+      : window.location.pathname;
+    if (next !== `${window.location.pathname}${window.location.search}`) {
+      window.history.replaceState(null, "", next);
+    }
+  }, [semitones]);
 
   const { html, currentKey, uniqueChords } = useMemo(() => {
     const parser = new ChordProParser();
