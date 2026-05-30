@@ -118,7 +118,7 @@ function HymnListInner({ pdHymns }: Props) {
   }
 
   return (
-    <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8">
+    <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(5rem+env(safe-area-inset-bottom))]">
       <header className="mb-8 flex items-baseline justify-between gap-4 content-backdrop">
         <div>
           <h1 className="text-3xl font-bold tracking-tight font-serif">
@@ -133,7 +133,7 @@ function HymnListInner({ pdHymns }: Props) {
         </div>
         <Link
           href="/my"
-          className="text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap"
+          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap"
         >
           My Songs →
         </Link>
@@ -238,6 +238,23 @@ function HymnListInner({ pdHymns }: Props) {
           ))}
         </ul>
       )}
+
+      <nav
+        aria-label="Quick actions"
+        className="fixed bottom-0 left-0 right-0 z-30 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:hidden"
+      >
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
+          <span className="text-xs opacity-50 font-mono">
+            {counts.all} hymns
+          </span>
+          <Link
+            href="/my"
+            className="px-4 py-2 rounded-md border border-amber-400/60 text-amber-300 hover:bg-amber-400/10 active:scale-95 transition-all text-sm"
+          >
+            My Songs →
+          </Link>
+        </div>
+      </nav>
     </main>
   );
 }
