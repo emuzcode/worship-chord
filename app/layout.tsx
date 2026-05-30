@@ -57,6 +57,20 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+// Runs before React hydrates so the <html> class agrees with the user's
+// stored theme. Without this, the SSR-emitted `dark` class would briefly
+// disagree with a `light`-stored preference, triggering React error #418.
+const themeInitScript = `
+(function(){
+  try {
+    var t = localStorage.getItem('worship-chord:theme');
+    if (t === 'light') {
+      document.documentElement.classList.remove('dark');
+    }
+  } catch(e) {}
+})();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -65,8 +79,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased dark`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body
         className="min-h-full flex flex-col relative"
         style={{
