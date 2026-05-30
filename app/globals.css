@@ -167,6 +167,21 @@ a {
   line-height: 1.2;
   min-height: 1.2em;
   padding-right: 0.25rem;
+  position: relative;
+}
+
+/* Invisible hit-area extension so chord glyphs (rendered as <span>) get a
+ * tap target close to the 44x44 Apple HIG guideline without changing layout.
+ * Body's min-height: 44px rule only applies to <button> / <a>, so spans need
+ * this manual fix. inset values bias upward where chords sit above lyrics
+ * (more vertical room) and stay tight horizontally so adjacent chords don't
+ * overlap into each other's primary tap zone.
+ */
+.chord-sheet .chord::before {
+  content: "";
+  position: absolute;
+  inset: -12px -4px -4px -4px;
+  pointer-events: auto;
 }
 
 .chord-sheet .lyrics {
