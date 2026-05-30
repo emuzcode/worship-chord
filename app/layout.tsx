@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
 import { SWRegister } from "@/components/SWRegister";
 import { InstallPrompt } from "@/components/InstallPrompt";
+import { AmbientMotif } from "@/components/AmbientMotif";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 const description =
@@ -42,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
+  themeColor: "#0e0e10",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -56,12 +63,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col relative">
+        <AmbientMotif />
         <SWRegister />
         <InstallPrompt />
-        {children}
+        <div className="relative z-[1] flex flex-col min-h-full">{children}</div>
       </body>
     </html>
   );
