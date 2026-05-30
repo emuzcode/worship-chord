@@ -13,6 +13,8 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 | 3 | 主よ御許に近づかん | Nearer, My God, to Thee | Editorial committee of 摂津第一公会『讃美歌集』 (1874) | Sarah Flower Adams (1805–1848) | Lowell Mason (1792–1872), tune "Bethany" | 1874 | First published in the Settsu Daiichi Kōkai hymnal (Meiji 7, 1874) — > 150 years ago; original authors died > 150 years ago |
 | 4 | もろびとこぞりて | Hark the Glad Sound! (sung to "Antioch") | Editorial committee of 讃美歌 (1923 / 1954) | Philip Doddridge (1702–1751) | Lowell Mason (1792–1872), tune "Antioch" (after Handel) | 1923 | Translation first appeared in 讃美歌 (1923); current form reflects the 1954 revision. Original authors died > 150 years ago. Japanese Wikipedia quotes the text in full as PD-cleared |
 | 5 | たみみなよろこべ | Joy to the World (sung to "Antioch") | Editorial committee of 讃美歌 (1922) | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Antioch" (after Handel) | 1922 | First published in 讃美歌 (1922) no. 58, > 100 years ago; original authors died > 150 years ago |
+| 6 | 神の御子は今宵しも | O Come, All Ye Faithful / Adeste Fideles | Editorial committee of 讃美歌 (1903 / 1954) | John Francis Wade (c. 1711–1786) — Latin; English by Frederick Oakeley (1802–1880) & William Thomas Brooke (1848–1917) | John Francis Wade (c. 1711–1786), tune "Adeste Fideles" | 1903 | Translation first appeared in 讃美歌 (1903) and was carried into 讃美歌 (1954) no. 111. Original Latin and English authors died > 100 years ago. Japanese Wikipedia quotes the text in full as PD-cleared |
+| 7 | 神は愛なり | (original Japanese composition by Mitani Taneyoshi) | Mitani Taneyoshi 三谷種吉 (1868–1945) — lyricist | (none — original Japanese lyrics, not a translation) | Traditional gospel tune (composer attribution lost) | 1900 | Original Japanese lyrics by Mitani Taneyoshi, who died 1945 — > 70 years post-mortem. First published in 基督教福音唱歌 (1900) no. 13 |
 
 ## English public-domain hymns
 
@@ -39,6 +41,8 @@ Users can add their own hymns through the in-browser UI on `/my`. These songs ar
 - [Wikipedia: 主われを愛す](https://ja.wikipedia.org/wiki/%E4%B8%BB%E3%82%8F%E3%82%8C%E3%82%92%E6%84%9B%E3%81%99) — Japanese translation history
 - [Wikipedia: 主よ御許に近づかん](https://ja.wikipedia.org/wiki/%E4%B8%BB%E3%82%88%E5%BE%A1%E8%A8%B1%E3%81%AB%E8%BF%91%E3%81%A5%E3%81%8B%E3%82%93) — quotes the 1874 Settsu Daiichi Kōkai translation
 - [Wikipedia: もろびとこぞりて](https://ja.wikipedia.org/wiki/%E3%82%82%E3%82%8D%E3%81%B3%E3%81%A8%E3%81%93%E3%81%9E%E3%82%8A%E3%81%A6) — quotes the 1923/1954 もろびとこぞりて and 1922 たみみなよろこべ translations as PD
+- [Wikipedia: 神の御子は今宵しも](https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AE%E5%BE%A1%E5%AD%90%E3%81%AF%E4%BB%8A%E5%AE%B5%E3%81%97%E3%82%82) — quotes the 1903/1954 translation
+- [Wikipedia: 神は愛なり](https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AF%E6%84%9B%E3%81%AA%E3%82%8A) — Mitani Taneyoshi's 1900 福音唱歌 lyrics
 - [PCUSA Historical Society blog on Julia N. Crosby](https://pcusa.org/news-storytelling/blogs/historical-society-blog/recovered-life-and-work-miss-julia-n-crosby)
 
 ## Avoided sources
