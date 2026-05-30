@@ -8,6 +8,7 @@ import { listMyHymns, makeNewHymn, saveMyHymn } from "@/lib/myHymns";
 import { HymnView } from "@/components/HymnView";
 import { HymnEditor } from "@/components/HymnEditor";
 import { ChordProHelp } from "@/components/ChordProHelp";
+import { Footer } from "@/components/Footer";
 
 type ViewMode = "list" | "view" | "edit";
 
@@ -176,6 +177,8 @@ export default function MyPage() {
           ← Back to public-domain hymns
         </Link>
       </p>
+
+      <Footer />
     </main>
   );
 }

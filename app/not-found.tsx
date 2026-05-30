@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
 
 export default function NotFound() {
   return (
+    <>
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-20 flex flex-col items-center text-center content-backdrop">
       <div
         aria-hidden="true"
@@ -27,5 +29,7 @@ export default function NotFound() {
         ← Back to all hymns
       </Link>
     </main>
+    <Footer />
+    </>
   );
 }

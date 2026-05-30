@@ -10,6 +10,7 @@ import { CategoryFilter, type HymnCategory } from "./CategoryFilter";
 import { getRecent } from "@/lib/recent";
 import { listBookmarks } from "@/lib/bookmarks";
 import { navigateWithTransition } from "@/lib/viewTransition";
+import { Footer } from "./Footer";
 
 const JP_CHAR = /[぀-ゟ゠-ヿ一-鿿]/;
 
@@ -127,7 +128,7 @@ function HymnListInner({ pdHymns }: Props) {
   }
 
   return (
-    <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(5rem+env(safe-area-inset-bottom))]">
+    <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
       <header className="mb-8 flex items-baseline justify-between gap-4 content-backdrop">
         <div>
           <h1 className="text-3xl font-bold tracking-tight font-serif">
@@ -247,6 +248,8 @@ function HymnListInner({ pdHymns }: Props) {
           ))}
         </ul>
       )}
+
+      <Footer />
 
       <nav
         aria-label="Quick actions"
