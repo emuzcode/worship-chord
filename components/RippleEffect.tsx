@@ -35,8 +35,8 @@ export function RippleEffect() {
       }
       const x = e.clientX;
       const y = e.clientY;
-      for (let i = 0; i < 3; i++) {
-        const t = window.setTimeout(() => spawn(x, y), i * 110);
+      for (let i = 0; i < 2; i++) {
+        const t = window.setTimeout(() => spawn(x, y), i * 220);
         timeouts.push(t);
       }
     }
@@ -57,5 +57,5 @@ function spawn(x: number, y: number) {
   ring.style.left = `${x}px`;
   ring.style.top = `${y}px`;
   document.body.appendChild(ring);
-  window.setTimeout(() => ring.remove(), 1100);
+  window.setTimeout(() => ring.remove(), 1600);
 }
