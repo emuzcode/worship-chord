@@ -23,7 +23,7 @@ const lora = Lora({
 });
 
 const description =
-  "Japanese hymns for the world to sing. Public-domain chord sheets with romaji — Meiji- and Taishō-era translations English speakers can play along to. Non-commercial.";
+  "MIZMOR (מִזְמוֹר) — a song struck on strings. Public-domain Japanese hymn chord sheets with romaji, for English speakers to play and sing along. Non-commercial.";
 const ogImage = "/worship-chord/opengraph-image.svg";
 
 export const metadata: Metadata = {
