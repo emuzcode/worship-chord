@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLiveQuery } from "dexie-react-hooks";
@@ -113,8 +113,17 @@ function HymnListInner({ pdHymns }: Props) {
       .filter((h): h is Hymn => h !== undefined);
   }, [combined, bookmarkSlugs]);
 
+  const PAGE_SIZE = 20;
+  const [shown, setShown] = useState(PAGE_SIZE);
+  // Tracks how many rows were shown before the most recent "Show more" so
+  // that fade-up animationDelay only cascades over the newly revealed batch
+  // instead of running across the entire list every time.
+  const prevShownRef = useRef(0);
+
   function setFilter(next: HymnCategory) {
     setCategory(next);
+    setShown(PAGE_SIZE);
+    prevShownRef.current = 0;
     const params = new URLSearchParams(searchParams.toString());
     if (next === "all") params.delete("lang");
     else params.set("lang", next);
@@ -254,40 +263,58 @@ function HymnListInner({ pdHymns }: Props) {
           )}
         </div>
       ) : (
-        <ul className="divide-y divide-foreground/5">
-          {visible.map((h, i) => (
-            <li
-              key={`${h.metadata.x_slug}-${i}`}
-              className="fade-up"
-              style={{ animationDelay: `${i * 50}ms` }}
-            >
-              <Link
-                href={detailHref(h)}
-                onClick={(e) => {
-                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) {
-                    return;
-                  }
-                  e.preventDefault();
-                  navigateWithTransition(() => router.push(detailHref(h)));
-                }}
-                className="block px-2 py-4 rounded-md hover:bg-foreground/[0.04] active:bg-foreground/[0.07] transition-colors"
-              >
-                <h2
-                  className="text-xl font-semibold font-serif"
-                  style={{
-                    viewTransitionName: `hymn-title-${h.metadata.x_slug}`,
-                  }}
+        <>
+          <ul className="divide-y divide-foreground/5">
+            {visible.slice(0, shown).map((h, i) => {
+              const newRow = i >= prevShownRef.current;
+              const delay = newRow ? (i - prevShownRef.current) * 50 : 0;
+              return (
+                <li
+                  key={`${h.metadata.x_slug}-${i}`}
+                  className={newRow ? "fade-up" : undefined}
+                  style={newRow ? { animationDelay: `${delay}ms` } : undefined}
                 >
-                  {h.metadata.title}
-                </h2>
-                <p className="text-sm opacity-60 mt-1">
-                  {h.metadata.lyricist || "—"} · {h.metadata.year} · key{" "}
-                  {h.metadata.key}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+                  <Link
+                    href={detailHref(h)}
+                    onClick={(e) => {
+                      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) {
+                        return;
+                      }
+                      e.preventDefault();
+                      navigateWithTransition(() => router.push(detailHref(h)));
+                    }}
+                    className="block px-2 py-4 rounded-md hover:bg-foreground/[0.04] active:bg-foreground/[0.07] transition-colors"
+                  >
+                    <h2
+                      className="text-xl font-semibold font-serif"
+                      style={{
+                        viewTransitionName: `hymn-title-${h.metadata.x_slug}`,
+                      }}
+                    >
+                      {h.metadata.title}
+                    </h2>
+                    <p className="text-sm opacity-60 mt-1">
+                      {h.metadata.lyricist || "—"} · {h.metadata.year} · key{" "}
+                      {h.metadata.key}
+                    </p>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          {shown < visible.length && (
+            <button
+              type="button"
+              onClick={() => {
+                prevShownRef.current = shown;
+                setShown((s) => s + PAGE_SIZE);
+              }}
+              className="mt-8 mx-auto block px-6 py-2 rounded-md border border-foreground/15 text-[10px] tracking-[0.25em] uppercase font-mono opacity-60 hover:opacity-100 hover:border-foreground/30 active:scale-95 transition-all"
+            >
+              ↓ Show {Math.min(PAGE_SIZE, visible.length - shown)} more
+            </button>
+          )}
+        </>
       )}
 
         <Footer />
