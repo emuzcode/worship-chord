@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useLiveQuery } from "dexie-react-hooks";
+import { db } from "@/lib/db";
 import { listMyHymns, makeNewHymn, saveMyHymn } from "@/lib/myHymns";
 import { HymnView } from "@/components/HymnView";
 import { HymnEditor } from "@/components/HymnEditor";
@@ -14,14 +15,46 @@ export default function MyPage() {
   const hymns = useLiveQuery(() => listMyHymns()) ?? [];
   const [view, setView] = useState<ViewMode>("list");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [storageError, setStorageError] = useState<string | null>(null);
+
+  // Probe IndexedDB once at mount. Private-mode Safari and certain
+  // enterprise policies disable it, and we want to surface that as a
+  // clear error rather than silently dropping the user's writes.
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        if (typeof indexedDB === "undefined") {
+          throw new Error("IndexedDB is unavailable in this browser.");
+        }
+        await db.hymns.count();
+      } catch (err) {
+        if (cancelled) return;
+        console.warn("MyPage storage probe failed", err);
+        setStorageError(
+          "This browser is blocking local storage (private mode or quota disabled). My Songs need IndexedDB to save."
+        );
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const selected = hymns.find((h) => h.id === selectedId);
 
   async function startNew() {
-    const next = makeNewHymn();
-    await saveMyHymn(next);
-    setSelectedId(next.id);
-    setView("edit");
+    try {
+      const next = makeNewHymn();
+      await saveMyHymn(next);
+      setSelectedId(next.id);
+      setView("edit");
+    } catch (err) {
+      console.error("startNew failed", err);
+      setStorageError(
+        "Could not create a new hymn. Local storage may be full or disabled."
+      );
+    }
   }
 
   if (view === "edit" && selected) {
@@ -82,6 +115,16 @@ export default function MyPage() {
           + Add
         </button>
       </header>
+
+      {storageError && (
+        <div
+          role="alert"
+          className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 mb-4 text-sm text-red-300"
+        >
+          <p className="font-semibold">Local storage unavailable</p>
+          <p className="opacity-80 mt-1">{storageError}</p>
+        </div>
+      )}
 
       <div className="rounded-lg border border-foreground/10 bg-foreground/5 px-4 py-3 mb-4 text-sm">
         <p className="font-semibold">Stays on this device.</p>

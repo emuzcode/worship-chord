@@ -71,7 +71,8 @@ function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
 
     const pos = lookupChord(chord);
     if (!pos) {
-      el.textContent = `${chord} (?)`;
+      el.textContent = `${chord} (diagram unavailable)`;
+      el.title = `${chord} — no fingering in the chord database`;
       return;
     }
 
@@ -114,7 +115,7 @@ function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
         setCachedDiagram(chord, size, el.innerHTML);
       } catch (err) {
         console.warn("ChordDiagram render failed for", chord, err);
-        el.textContent = chord;
+        el.textContent = `${chord} (render error)`;
       }
     };
 
