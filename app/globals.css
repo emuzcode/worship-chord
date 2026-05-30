@@ -87,3 +87,14 @@ a {
   opacity: 0.6;
   margin: 0.5rem 0;
 }
+
+/* Romanization rows (no chord markers): render smaller and slightly faded under the original line */
+.chord-sheet .row:not(:has(.chord)) {
+  margin-top: -0.5rem;
+  opacity: 0.65;
+}
+
+.chord-sheet .row:not(:has(.chord)) .lyrics {
+  font-size: 0.9rem;
+  font-style: italic;
+}

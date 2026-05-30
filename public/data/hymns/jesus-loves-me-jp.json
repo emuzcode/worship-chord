@@ -15,5 +15,5 @@
     "x_translator_death_year": 1918,
     "x_source_url": "https://ja.wikipedia.org/wiki/%E4%B8%BB%E3%82%8F%E3%82%8C%E3%82%92%E6%84%9B%E3%81%99"
   },
-  "chordpro": "{title: 主われを愛す}\n{subtitle: Jesus Loves Me, This I Know — Japanese translation by Julia N. Crosby (1872)}\n{key: G}\n{time: 4/4}\n{tempo: 90}\n\n{start_of_verse: 1}\n[G]主われを[D]愛す [G]主は強[C]けれ[G]ば\n[G]われ弱く[C]とも [G]恐れは[D]あら[G]じ\n{end_of_verse}\n\n{start_of_chorus}\n[G]主われを[C]愛す [G]主われを[D]愛す\n[G]主われを[C]愛す [G]聖書は[D]言い[G]ぬ\n{end_of_chorus}\n"
+  "chordpro": "{title: 主われを愛す}\n{subtitle: Jesus Loves Me, This I Know — Japanese translation by Julia N. Crosby (1872)}\n{key: G}\n{time: 4/4}\n{tempo: 90}\n\n{start_of_verse: 1}\n[G]主われを[D]愛す [G]主は強[C]けれ[G]ば\nshu ware wo aisu, shu wa tsuyokereba\n[G]われ弱く[C]とも [G]恐れは[D]あら[G]じ\nware yowaku tomo, osore wa araji\n{end_of_verse}\n\n{start_of_chorus}\n[G]主われを[C]愛す [G]主われを[D]愛す\nshu ware wo aisu, shu ware wo aisu\n[G]主われを[C]愛す [G]聖書は[D]言い[G]ぬ\nshu ware wo aisu, seisho wa iinu\n{end_of_chorus}\n"
 }

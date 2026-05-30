@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Dark-mode chord & lyric viewer for public-domain hymns. Built for low-light environments.";
+  "Japanese hymns shared with the world. A non-commercial, dark-mode viewer for public-domain hymn chord sheets — focused on Japanese translations of historic hymns.";
 const ogImage = "/worship-chord/opengraph-image.svg";
 
 export const metadata: Metadata = {

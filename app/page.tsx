@@ -8,8 +8,11 @@ export default async function Home() {
       <header className="mb-8 flex items-baseline justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">worship-chord</h1>
-          <p className="text-sm opacity-60 mt-1">
-            Public-domain hymns · {hymns.length} songs
+          <p className="text-sm opacity-70 mt-1">
+            Japanese hymns shared with the world.
+          </p>
+          <p className="text-xs opacity-50 mt-0.5">
+            {hymns.length} public-domain chord sheets · non-commercial
           </p>
         </div>
         <Link
