@@ -23,7 +23,7 @@ const lora = Lora({
 });
 
 const description =
-  "Japanese hymns shared with the world. A non-commercial, dark-mode viewer for public-domain hymn chord sheets — focused on Japanese translations of historic hymns.";
+  "Japanese hymns for the world to sing. Public-domain chord sheets with romaji — Meiji- and Taishō-era translations English speakers can play along to. Non-commercial.";
 const ogImage = "/worship-chord/opengraph-image.svg";
 
 export const metadata: Metadata = {

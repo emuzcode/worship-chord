@@ -141,10 +141,11 @@ function HymnListInner({ pdHymns }: Props) {
               worship-chord
             </h1>
             <p className="text-sm opacity-70 mt-1">
-              Japanese hymns shared with the world.
+              Japanese hymns, for the world to sing.
             </p>
             <p className="text-xs opacity-50 mt-0.5">
-              {counts.all} public-domain chord sheets · non-commercial
+              Chord sheets with romaji · {counts.all} public-domain songs ·
+              non-commercial
             </p>
           </div>
         </div>
