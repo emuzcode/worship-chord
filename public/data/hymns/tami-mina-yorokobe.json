@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "たみみなよろこべ",
+    "subtitle": "Joy to the World — Japanese (Taishō-era translation)",
+    "composer": "Lowell Mason (1792–1872), tune \"Antioch\" adapted from Handel's Messiah",
+    "lyricist": "Isaac Watts (1674–1748), \"Joy to the World\" — Japanese translation by the editorial committee of 讃美歌 (1922)",
+    "year": 1922,
+    "key": "D",
+    "time": "4/4",
+    "tempo": 96,
+    "x_slug": "tami-mina-yorokobe",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Original lyrics by Watts (d. 1748) and tune by Mason (d. 1872) are PD by > 150 years. Japanese translation appears in 讃美歌 (1922) no. 58, edited by the 讃美歌委員 (hymnal committee) of the Meiji-Taishō era; > 100 years since publication and the committee members died well before 1955. Japanese Wikipedia quotes the text in full as PD-cleared",
+    "x_translator": "Editorial committee of 讃美歌 (1922)",
+    "x_translator_death_year": 1922,
+    "x_source_url": "https://ja.wikipedia.org/wiki/%E3%82%82%E3%82%8D%E3%81%B3%E3%81%A8%E3%81%93%E3%81%9E%E3%82%8A%E3%81%A6"
+  },
+  "chordpro": "{title: たみみなよろこべ}\n{subtitle: Joy to the World — Japanese translation, 讃美歌 (1922) no. 58}\n{key: D}\n{time: 4/4}\n{tempo: 96}\n\n{start_of_verse: 1}\n[D]民皆喜[A]べ [D]主は来ま[A]せり\ntami mina yorokobe, shu wa kimaseri\n[Bm]心を[F#m]開きて [G]迎え[A]奉[D]れ\nkokoro wo hirakite, mukae tatematsure\n[D]迎え[G]奉[D]れ [G]心を[A]開きて [D]\nmukae tatematsure, kokoro wo hirakite\n{end_of_verse}\n\n{start_of_verse: 2}\n[D]御恵みの[A]光 [D]世に遍(あま[A]ね)し\nmimegumi no hikari, yo ni amaneshi\n[Bm]海山[F#m]島々 [G]いさ[A]歌へ[D]よ\numi yama shimajima, isa utaheyo\n[D]いさ[G]歌へ[D]よ [G]海山[A]島々 [D]\nisa utaheyo, umi yama shimajima\n{end_of_verse}\n\n{start_of_verse: 3}\n[D]呪はれし[A]地にも [D]茨(いばら)生[A]えず\nnorowareshi chi ni mo, ibara haezu\n[Bm]幸(さいわ)[F#m]ひあれよと [G]祝(いわ)[A]ひま[D]せり\nsaiwai are yo to, iwai maseri\n[D]祝ひ[G]ま[D]せり [G]幸ひ[A]あれよと [D]\niwai maseri, saiwai are yo to\n{end_of_verse}\n\n{start_of_verse: 4}\n[D]正しき裁[A]きを [D]行(おこな)ひ給[A]ふ\ntadashiki sabaki wo, okonai tamou\n[Bm]我が主の[F#m]御旨に [G]皆[A]従[D]へ\nwaga shu no mimune ni, mina shitagae\n[D]皆[G]従[D]へ [G]我が主の[A]御旨に [D]\nmina shitagae, waga shu no mimune ni\n{end_of_verse}\n"
+}

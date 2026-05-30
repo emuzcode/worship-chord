@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "天にはさかえ",
+    "subtitle": "Hark! The Herald Angels Sing — Japanese (聖公会讃美歌, 1891 「かみにはさかえ」)",
+    "composer": "Felix Mendelssohn (1809–1847), tune adapted from \"Festgesang\" (1840)",
+    "lyricist": "Charles Wesley (1707–1788) — Japanese translation by the editor of 聖公会讃美歌 (Hugh J. Foss, 1891), at the time titled かみにはさかえ",
+    "year": 1891,
+    "key": "F",
+    "time": "4/4",
+    "tempo": 100,
+    "x_slug": "ame-ni-wa-sakae",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Original lyrics by Wesley (d. 1788) and tune by Mendelssohn (d. 1847) are PD by > 150 years. Earliest Japanese translation appeared in ヒウ・ゼ・フヲス編『聖公会讃美歌』(1891) no. 35 — > 130 years ago, Meiji 24. Japanese Wikisource hosts the full PD text",
+    "x_translator": "Hugh J. Foss (ヒウ・ゼ・フヲス) ed., 聖公会讃美歌 (1891)",
+    "x_translator_death_year": 1922,
+    "x_source_url": "https://ja.wikisource.org/wiki/%E5%A4%A9%E3%81%AB%E3%81%AF%E3%81%95%E3%81%8B%E3%81%88"
+  },
+  "chordpro": "{title: 天にはさかえ}\n{subtitle: Hark! The Herald Angels Sing — Japanese, 聖公会讃美歌 (1891) no. 35 「かみにはさかえ」}\n{key: F}\n{time: 4/4}\n{tempo: 100}\n{comment: Title in the original Meiji-era hymnal: 「かみにはさかえ」. Modernized to 「天にはさかえ」 in later editions.}\n\n{start_of_verse: 1}\n[F]かみには[C]さかえ [Dm]ちには[Bb]おだやか\nkami ni wa sakae, chi ni wa odayaka\n[F]よひと〻[C]かみと [Dm]やはらぎ[Bb]たりと\nyo hitobito kami to, yawaragi tari to\n[F]みつかひ[Bb]たちの [F]うたへる[C]うたを\nmitsukai tachi no, utaeru uta wo\n[Dm]ひと〴〵[Am]き〻て [Bb]ともによ[C]ろこ[F]び\nhitobito kikite, tomo ni yorokobi\n[F]けふあれ[Bb]ませる [F]きみをほ[C]むべ[F]し\nkyou are maseru, kimi wo homu beshi\n{end_of_verse}\n\n{start_of_verse: 2}\n[F]さだめた[C]まひし [Dm]そのとき[Bb]にしも\nsadame tamaishi, sono toki ni shimo\n[F]たふとき[C]かみの [Dm]みくらを[Bb]はなれ\ntautoki kami no, mikura wo hanare\n[F]われらと[Bb]〻もに [F]ましま[C]すために\nwarera tomo ni, mashimasu tame ni\n[Dm]しづのを[Am]とめの [Bb]はらにや[C]どり[F]て\nshizu no otome no, hara ni yadorite\n[F]けふあれ[Bb]ませる [F]きみをほ[C]むべ[F]し\nkyou are maseru, kimi wo homu beshi\n{end_of_verse}\n\n{start_of_verse: 3}\n[F]くもきり[C]はらい [Dm]ひの〻[Bb]ぼるごと\nkumo kiri harai, hi no noboru goto\n[F]みひかり[C]をもて [Dm]くらきを[Bb]てらし\nmihikari wo mote, kuraki wo terashi\n[F]つちより[Bb]いづる [F]ひとをい[C]かしめ\ntsuchi yori izuru, hito wo ikashime\n[Dm]つきぬい[Am]のちを [Bb]さづくる[C]ため[F]に\ntsukinu inochi wo, sazukuru tame ni\n[F]けふあれ[Bb]ませる [F]きみをほ[C]むべ[F]し\nkyou are maseru, kimi wo homu beshi\n{end_of_verse}\n"
+}

@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "エサイの根より",
+    "subtitle": "Es ist ein Ros entsprungen — Japanese, tr. Nakayama Masaki",
+    "composer": "Michael Praetorius (1571–1621), harmonization from Musae Sioniae (1609)",
+    "lyricist": "Anonymous 15th-century German hymn — Japanese translation by Nakayama Masaki 中山昌樹 (1886–1944)",
+    "year": 1931,
+    "key": "F",
+    "time": "4/4",
+    "tempo": 76,
+    "x_slug": "esai-no-ne-yori",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Original German lyrics are a 15th-century anonymous hymn; Praetorius's harmonization (d. 1621) is PD by > 400 years. Japanese translation by Nakayama Masaki (d. 1944) — > 70 years post-mortem, PD per Japanese copyright law. Translation appeared in 讃美歌 96 番 「エサイの根より」",
+    "x_translator": "Nakayama Masaki 中山昌樹 (1886–1944)",
+    "x_translator_death_year": 1944,
+    "x_source_url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B5%E3%82%A4%E3%81%AE%E6%A0%B9%E3%82%88%E3%82%8A"
+  },
+  "chordpro": "{title: エサイの根より}\n{subtitle: Es ist ein Ros entsprungen — Japanese, 讃美歌 96, tr. 中山昌樹}\n{key: F}\n{time: 4/4}\n{tempo: 76}\n{comment: An Advent/Christmas hymn. Praetorius's gentle harmonization is the most-loved version worldwide.}\n\n{start_of_verse: 1}\n[F]エサイの[C]根[Dm]より [Bb]生(お)いいで[F]たる\nesai no ne yori, oi idetaru\n[F]くすしき[C]花[Dm]は [Bb]さきそめ[F]けり\nkusushiki hana wa, sakisomekeri\n[Dm]わが主イ[Am]エスの [Bb]うまれた[C]まいし\nwaga shu iesu no, umare tamaishi\n[F]このよ[Bb]き [F]日[C]よ[F]\nkono yoki hi yo\n{end_of_verse}\n\n{start_of_verse: 2}\n[F]イザヤの[C]告[Dm]げし [Bb]すくいぬ[F]しは\nizaya no tsugeshi, sukui nushi wa\n[F]きよき母[C]よ[Dm]り [Bb]うまれま[F]しぬ\nkiyoki haha yori, umare mashinu\n[Dm]主のちか[Am]いの [Bb]今しも[C]成れる\nshu no chikai no, ima shimo nareru\n[F]このよ[Bb]き [F]日[C]よ[F]\nkono yoki hi yo\n{end_of_verse}\n\n{start_of_verse: 3}\n[F]たえにと[C]う[Dm]とき [Bb]イエスの御[F]名の\ntae ni toutoki, iesu no mina no\n[F]かおりは[C]と[Dm]おく [Bb]世にあま[F]ねし\nkaori wa tooku, yo ni amaneshi\n[Dm]いざやと[Am]もに [Bb]よろこび[C]いわえ\niza ya tomo ni, yorokobi iwae\n[F]このよ[Bb]き [F]日[C]を[F]\nkono yoki hi wo\n{end_of_verse}\n"
+}

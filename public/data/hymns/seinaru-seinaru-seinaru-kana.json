@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "聖なる聖なる聖なるかな",
+    "subtitle": "Holy, Holy, Holy — Japanese (聖公会讃美歌, 1891)",
+    "composer": "John B. Dykes (1823–1876), tune \"Nicaea\"",
+    "lyricist": "Reginald Heber (1783–1826) — Japanese translation by the editor of 聖公会讃美歌 (Hugh J. Foss, 1891), at the time titled いときよきかな",
+    "year": 1891,
+    "key": "D",
+    "time": "4/4",
+    "tempo": 84,
+    "x_slug": "seinaru-seinaru-seinaru-kana",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Original lyrics by Heber (d. 1826) and tune by Dykes (d. 1876) are PD by > 150 years. Earliest Japanese translation appeared in ヒウ・ゼ・フヲス編『聖公会讃美歌』(1891) no. 96 — > 130 years ago, Meiji 24. Japanese Wikisource hosts the full PD text",
+    "x_translator": "Hugh J. Foss (ヒウ・ゼ・フヲス) ed., 聖公会讃美歌 (1891)",
+    "x_translator_death_year": 1922,
+    "x_source_url": "https://ja.wikisource.org/wiki/%E8%81%96%E3%81%AA%E3%82%8B%E8%81%96%E3%81%AA%E3%82%8B%E8%81%96%E3%81%AA%E3%82%8B%E3%81%8B%E3%81%AA"
+  },
+  "chordpro": "{title: 聖なる聖なる聖なるかな}\n{subtitle: Holy, Holy, Holy — Japanese, 聖公会讃美歌 (1891) no. 96 「いときよきかな」}\n{key: D}\n{time: 4/4}\n{tempo: 84}\n{comment: One of the earliest Japanese hymn translations — Meiji 24 (1891). Original title \"いときよきかな\"}\n\n{start_of_verse: 1}\n[D]聖(きよ)きか[A]な [D]聖(きよ)き[A]かな\nkiyoki kana, kiyoki kana\n[Bm]聖(きよ)き[F#m]かな主たる [G]全能(ぜんのう)[A]の神[D]\nkiyoki kana, shu taru zennou no kami\n[D]いとき[G]よ[D]きかな [A]めぐみ[D]ある\nito kiyoki kana, megumi aru\n[G]みつのみ[D]くらゐ [A]ひとつなる[D]\nmitsu no mikurai, hitotsu naru\n[D]かみの[G]み[D]なをば [A]あさま[D]だき\nkami no mina wo ba, asa madaki\n[G]おきいで[D]ゝこそ [A]ほめまつ[D]れ\nokiidete koso, home matsure\n{end_of_verse}\n\n{start_of_verse: 2}\n[D]いとき[G]よ[D]きかな [A]とこしへ[D]に\nito kiyoki kana, tokoshie ni\n[Bm]ましま[F#m]すかみの [G]まへに[A]ふし[D]\nmashimasu kami no, mae ni fushi\n[D]ひじりも[G]か[D]むり [A]なげす[D]てゝ\nhijiri mo kamuri, nagesutete\n[G]みつかひ[D]ともに [A]みなをほ[D]む\nmitsukai tomo ni, mina wo homu\n{end_of_verse}\n\n{start_of_verse: 3}\n[D]いとき[G]よ[D]きかな [A]そのみ[D]いづ\nito kiyoki kana, sono mi-izu\n[Bm]つみある[F#m]めには [G]みえね[A]ども[D]\ntsumi aru me ni wa, mienedomo\n[D]みいつく[G]し[D]みの [A]みち〴〵[D]し\nmi-itsukushimi no, michimichishi\n[G]かみのい[D]さをぞ [A]たくひな[D]き\nkami no isawo zo, taguinaki\n{end_of_verse}\n\n{start_of_verse: 4}\n[D]いとき[G]よ[D]きかな [A]つくら[D]れし\nito kiyoki kana, tsukurareshi\n[Bm]あめつち[F#m]うみの [G]ものは[A]みな[D]\nametsuchi umi no, mono wa mina\n[D]みつのみ[G]く[D]らゐ [A]ひとつ[D]なる\nmitsu no mikurai, hitotsu naru\n[G]かみのみ[D]なをぞ [A]ほめまつ[D]る\nkami no mina wo zo, home matsuru\n{end_of_verse}\n"
+}
