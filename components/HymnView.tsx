@@ -127,7 +127,14 @@ export function HymnView({ hymn }: Props) {
     <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-[calc(8rem+env(safe-area-inset-bottom))]">
       <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop flex items-start justify-between gap-3 sticky top-0 z-20 bg-background/85 backdrop-blur-sm">
         <div className="flex-1 min-w-0">
-          <h1 className="text-3xl font-bold tracking-tight font-serif">
+          <h1
+            className="text-3xl font-bold tracking-tight font-serif"
+            style={
+              slug
+                ? { viewTransitionName: `hymn-title-${slug}` }
+                : undefined
+            }
+          >
             {hymn.metadata.title}
           </h1>
           {hymn.metadata.subtitle && (

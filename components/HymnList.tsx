@@ -9,6 +9,7 @@ import type { Hymn } from "@/lib/types";
 import { CategoryFilter, type HymnCategory } from "./CategoryFilter";
 import { getRecent } from "@/lib/recent";
 import { listBookmarks } from "@/lib/bookmarks";
+import { navigateWithTransition } from "@/lib/viewTransition";
 
 const JP_CHAR = /[぀-ゟ゠-ヿ一-鿿]/;
 
@@ -211,9 +212,21 @@ function HymnListInner({ pdHymns }: Props) {
             >
               <Link
                 href={detailHref(h)}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) {
+                    return;
+                  }
+                  e.preventDefault();
+                  navigateWithTransition(() => router.push(detailHref(h)));
+                }}
                 className="block p-4 rounded-lg border border-foreground/10 hover:bg-foreground/5 active:bg-foreground/10 transition-colors content-backdrop"
               >
-                <h2 className="text-xl font-semibold font-serif">
+                <h2
+                  className="text-xl font-semibold font-serif"
+                  style={{
+                    viewTransitionName: `hymn-title-${h.metadata.x_slug}`,
+                  }}
+                >
                   {h.metadata.title}
                 </h2>
                 <p className="text-sm opacity-60 mt-1">
