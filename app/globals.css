@@ -30,3 +30,50 @@ a {
   min-height: 44px;
   min-width: 44px;
 }
+
+/* ChordSheetJS HtmlDivFormatter output styling */
+.chord-sheet {
+  width: 100%;
+}
+
+.chord-sheet .paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.chord-sheet .paragraph + .paragraph {
+  margin-top: 0.5rem;
+}
+
+.chord-sheet .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.chord-sheet .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.chord-sheet .chord {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-weight: 700;
+  color: #fbbf24;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  min-height: 1.2em;
+  padding-right: 0.25rem;
+}
+
+.chord-sheet .lyrics {
+  font-family: var(--font-geist-sans), "Noto Sans JP", system-ui, sans-serif;
+  white-space: pre;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.chord-sheet .comment {
+  font-style: italic;
+  opacity: 0.6;
+  margin: 0.5rem 0;
+}
