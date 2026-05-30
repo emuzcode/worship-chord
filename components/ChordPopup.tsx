@@ -32,7 +32,7 @@ export function ChordPopup({ chord, onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
         className="content-backdrop p-6 rounded-lg border border-foreground/20 max-w-[90vw]"
       >
-        <ChordDiagram chord={chord} size="lg" />
+        <ChordDiagram chord={chord} size="lg" eager />
         <button
           type="button"
           onClick={onClose}
