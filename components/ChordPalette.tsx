@@ -11,7 +11,10 @@ type Props = {
 export function ChordPalette({ chords, onSelect }: Props) {
   if (chords.length === 0) return null;
   return (
-    <div className="flex flex-wrap gap-2 my-4 content-backdrop p-3 rounded-lg border border-foreground/10">
+    <div
+      className="sticky z-10 -mx-4 px-2 py-2 my-2 flex gap-2 overflow-x-auto snap-x snap-mandatory bg-background/85 backdrop-blur-sm border-b border-foreground/10 transition-[top] duration-150 ease-out"
+      style={{ top: "var(--header-h, 0px)" }}
+    >
       {chords.map((c) => (
         <button
           key={c}
@@ -21,7 +24,7 @@ export function ChordPalette({ chords, onSelect }: Props) {
             onSelect?.(c);
           }}
           aria-label={`Show ${c} chord diagram`}
-          className="p-1 rounded hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all"
+          className="snap-start flex-shrink-0 p-1 rounded hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all"
         >
           <ChordDiagram chord={c} size="sm" />
         </button>
