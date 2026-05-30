@@ -12,6 +12,10 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "@/lib/db";
 import { toggleBookmark } from "@/lib/bookmarks";
 import { vibrate } from "@/lib/haptic";
+import { useStickyCompact } from "@/lib/useStickyCompact";
+
+const HEADER_EXPANDED = 180;
+const HEADER_COMPACT = 56;
 
 type Props = {
   hymn: Hymn;
@@ -46,6 +50,21 @@ export function HymnView({ hymn }: Props) {
     [slug],
     false
   );
+
+  // Detail header collapses to a single-line title bar once the page has
+  // scrolled past the sentinel. The current height is published as
+  // --header-h so a sticky ChordPalette can sit flush against it.
+  const { sentinelRef, compact } = useStickyCompact();
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    document.documentElement.style.setProperty(
+      "--header-h",
+      `${compact ? HEADER_COMPACT : HEADER_EXPANDED}px`
+    );
+    return () => {
+      document.documentElement.style.removeProperty("--header-h");
+    };
+  }, [compact]);
 
   // Persist semitones into the URL whenever the user transposes.
   useEffect(() => {
@@ -125,10 +144,18 @@ export function HymnView({ hymn }: Props) {
 
   return (
     <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-[calc(8rem+env(safe-area-inset-bottom))]">
-      <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop flex items-start justify-between gap-3 sticky top-0 z-20 bg-background/85 backdrop-blur-sm">
-        <div className="flex-1 min-w-0">
+      <div ref={sentinelRef} aria-hidden className="h-px" />
+      <header
+        className="sticky top-0 z-20 -mx-4 px-4 border-b border-foreground/10 bg-background/85 backdrop-blur-sm content-backdrop overflow-hidden transition-[max-height] duration-150 ease-out"
+        style={{
+          maxHeight: `${compact ? HEADER_COMPACT : HEADER_EXPANDED}px`,
+        }}
+      >
+        <div className="pt-3 pb-2 flex items-start justify-between gap-3">
           <h1
-            className="text-3xl font-bold tracking-tight font-serif"
+            className={`font-bold tracking-tight font-serif flex-1 min-w-0 ${
+              compact ? "text-xl truncate" : "text-3xl"
+            }`}
             style={
               slug
                 ? { viewTransitionName: `hymn-title-${slug}` }
@@ -137,32 +164,35 @@ export function HymnView({ hymn }: Props) {
           >
             {hymn.metadata.title}
           </h1>
+          <button
+            type="button"
+            onClick={() => {
+              if (!slug) return;
+              vibrate(12);
+              toggleBookmark(slug);
+            }}
+            aria-pressed={bookmarked}
+            aria-label={
+              bookmarked ? "Remove from favorites" : "Add to favorites"
+            }
+            className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 ${
+              bookmarked
+                ? "text-accent"
+                : "text-foreground/40 hover:text-foreground/70"
+            }`}
+          >
+            {bookmarked ? "♥" : "♡"}
+          </button>
+        </div>
+        <div className="pb-3 pr-12">
           {hymn.metadata.subtitle && (
-            <p className="text-lg opacity-70 mt-1">{hymn.metadata.subtitle}</p>
+            <p className="text-lg opacity-70">{hymn.metadata.subtitle}</p>
           )}
           <p className="text-sm opacity-50 mt-2">
-            {hymn.metadata.lyricist} / {hymn.metadata.composer} · {hymn.metadata.year}
+            {hymn.metadata.lyricist} / {hymn.metadata.composer} ·{" "}
+            {hymn.metadata.year}
           </p>
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            if (!slug) return;
-            vibrate(12);
-            toggleBookmark(slug);
-          }}
-          aria-pressed={bookmarked}
-          aria-label={
-            bookmarked ? "Remove from favorites" : "Add to favorites"
-          }
-          className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 ${
-            bookmarked
-              ? "text-accent"
-              : "text-foreground/40 hover:text-foreground/70"
-          }`}
-        >
-          {bookmarked ? "♥" : "♡"}
-        </button>
       </header>
 
       <ChordPalette chords={uniqueChords} onSelect={setPopupChord} />
