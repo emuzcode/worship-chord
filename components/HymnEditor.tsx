@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { StoredHymn } from "@/lib/db";
 import { saveMyHymn, deleteMyHymn } from "@/lib/myHymns";
+import { ChordProHelp } from "./ChordProHelp";
 
 type Props = {
   hymn: StoredHymn;
@@ -96,12 +97,7 @@ export function HymnEditor({ hymn, onDone, onCancel }: Props) {
           </label>
         </div>
         <label className="flex flex-col gap-1">
-          <span className="text-sm opacity-70">
-            ChordPro source
-            <span className="opacity-50">
-              {" "}— use [C] inline before lyrics, {"{key:}"}, {"{start_of_verse}"} etc.
-            </span>
-          </span>
+          <span className="text-sm opacity-70">ChordPro source</span>
           <textarea
             value={chordpro}
             onChange={(e) => setChordpro(e.target.value)}
@@ -109,6 +105,7 @@ export function HymnEditor({ hymn, onDone, onCancel }: Props) {
             className="px-3 py-2 rounded-md border border-foreground/20 bg-transparent font-mono text-sm whitespace-pre"
           />
         </label>
+        <ChordProHelp />
       </div>
 
       <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3">

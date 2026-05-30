@@ -6,6 +6,7 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { listMyHymns, makeNewHymn, saveMyHymn } from "@/lib/myHymns";
 import { HymnView } from "@/components/HymnView";
 import { HymnEditor } from "@/components/HymnEditor";
+import { ChordProHelp } from "@/components/ChordProHelp";
 
 type ViewMode = "list" | "view" | "edit";
 
@@ -66,12 +67,11 @@ export default function MyPage() {
   // list view
   return (
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8">
-      <header className="mb-6 flex items-baseline justify-between gap-4">
+      <header className="mb-4 flex items-baseline justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">My Songs</h1>
           <p className="text-sm opacity-60 mt-1">
-            {hymns.length} {hymns.length === 1 ? "song" : "songs"} · stored in your
-            browser
+            {hymns.length} {hymns.length === 1 ? "song" : "songs"}
           </p>
         </div>
         <button
@@ -83,12 +83,24 @@ export default function MyPage() {
         </button>
       </header>
 
+      <div className="rounded-lg border border-foreground/10 bg-foreground/5 px-4 py-3 mb-4 text-sm">
+        <p className="font-semibold">Stays on this device.</p>
+        <p className="opacity-70 mt-1">
+          Songs you add here are saved in your browser&rsquo;s IndexedDB. They are
+          never uploaded, shared, or included in the public repository.
+        </p>
+      </div>
+
+      <ChordProHelp />
+
       {hymns.length === 0 ? (
         <div className="opacity-60 text-center py-12">
           <p>No songs yet.</p>
           <p className="text-sm mt-2">
-            Tap <span className="font-mono">+ Add</span> to write your first hymn in
-            ChordPro.
+            Tap <span className="font-mono">+ Add</span> to write your first hymn.
+            <br />
+            Open <span className="font-mono">How to write ChordPro</span> above for
+            a quick syntax tour.
           </p>
         </div>
       ) : (
