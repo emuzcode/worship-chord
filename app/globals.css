@@ -103,7 +103,7 @@ a {
  */
 @keyframes draw-fade-spawn {
   0%   { stroke-dashoffset: var(--dash, 400); opacity: 0; }
-  20%  { opacity: var(--hairline-opacity); }
+  6%   { opacity: var(--hairline-opacity); }
   100% { stroke-dashoffset: 0; opacity: 0; }
 }
 

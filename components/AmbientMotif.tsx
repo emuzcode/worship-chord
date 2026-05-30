@@ -37,12 +37,24 @@ export function AmbientMotif() {
     let viewportH = window.innerHeight;
     svgEl.setAttribute("viewBox", `0 0 ${viewportW} ${viewportH}`);
 
+    // Concurrent active-motif cap scales with viewport area. iPhone SE
+    // (~250k px²) gets ~5 active, FHD (~2M px²) gets ~28. Prevents motif
+    // overload on phones while letting desktop breathe.
+    let maxActive = Math.max(
+      5,
+      Math.min(28, Math.round((viewportW * viewportH) / 55000))
+    );
+
     const cleanups: Array<() => void> = [];
 
     const updateViewBox = () => {
       viewportW = window.innerWidth;
       viewportH = window.innerHeight;
       svgEl.setAttribute("viewBox", `0 0 ${viewportW} ${viewportH}`);
+      maxActive = Math.max(
+        5,
+        Math.min(28, Math.round((viewportW * viewportH) / 55000))
+      );
     };
 
     const resizeObserver = new ResizeObserver(() => updateViewBox());
@@ -50,6 +62,12 @@ export function AmbientMotif() {
     cleanups.push(() => resizeObserver.disconnect());
 
     const spawn = () => {
+      // Source of truth for active count is the live DOM rather than a
+      // counter — removeTimer is guaranteed to detach each <g>, so
+      // querying avoids any drift between intended and actual state.
+      if (svgEl.querySelectorAll(".spawned-group").length >= maxActive) {
+        return;
+      }
       const name = pick(MOTIF_POOL);
       const motifFn = MOTIFS[name];
       if (!motifFn) return;
@@ -79,9 +97,9 @@ export function AmbientMotif() {
     const tick = () => {
       if (!document.hidden) {
         spawn();
-        if (Math.random() < 0.5) spawn();
+        if (Math.random() < 0.7) spawn();
       }
-      const next = rand(1200, 2800);
+      const next = rand(700, 1700);
       const t = window.setTimeout(tick, next);
       cleanups.push(() => clearTimeout(t));
     };
