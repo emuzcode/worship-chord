@@ -6,7 +6,14 @@ import { vibrate } from "@/lib/haptic";
 const STORAGE_KEY = "worship-chord:theme";
 type Theme = "dark" | "light";
 
-export function ThemeToggle() {
+type Props = {
+  className?: string;
+};
+
+const DEFAULT_CLASS =
+  "px-4 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all text-xl";
+
+export function ThemeToggle({ className }: Props = {}) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
@@ -31,7 +38,7 @@ export function ThemeToggle() {
       aria-label={
         theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
       }
-      className="px-4 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all text-xl"
+      className={className ?? DEFAULT_CLASS}
     >
       {theme === "dark" ? "☀" : "☾"}
     </button>

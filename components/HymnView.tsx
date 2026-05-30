@@ -193,7 +193,7 @@ export function HymnView({ hymn }: Props) {
             aria-label={
               bookmarked ? "Remove from favorites" : "Add to favorites"
             }
-            className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 ${
+            className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 flex-shrink-0 ${
               bookmarked
                 ? "text-accent"
                 : "text-foreground/40 hover:text-foreground/70"
@@ -201,6 +201,7 @@ export function HymnView({ hymn }: Props) {
           >
             {bookmarked ? "♥" : "♡"}
           </button>
+          <ThemeToggle className="text-foreground/50 hover:text-foreground/80 text-xl leading-none px-2 py-2 rounded-md transition-colors active:scale-95 flex-shrink-0" />
         </div>
         <div className="pb-3 pr-12">
           {hymn.metadata.subtitle && (
@@ -225,7 +226,6 @@ export function HymnView({ hymn }: Props) {
 
       <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] z-30">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => {
