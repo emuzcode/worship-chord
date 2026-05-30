@@ -20,6 +20,8 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 | 10 | いざ歌えいざ祝え | O du fröhliche | Nakayama Masaki 中山昌樹 (1886–1944) | Johannes Falk (1768–1826) + Heinrich Holzschuher (1798–1847) | Traditional Sicilian melody (anonymous) | 1931 | Translator died 1944 (> 70 years); explicitly marked PD-old-50-1996 on Wikisource ja. First published in 讃美歌 (1931) no. 94 |
 | 11 | 貴きみかみよ | Aus tiefer Not (Luther) | Nakayama Masaki 中山昌樹 (1886–1944) | Martin Luther (1483–1546) | Martin Luther | 1931 | Translator died 1944 (> 70 years); explicitly marked PD-old-50-1996 on Wikisource ja. Luther's original is > 500 years old. First published in 讃美歌 (1931) no. 250 |
 | 12 | 聖なる聖なる聖なるかな | Holy, Holy, Holy, Lord God Almighty | Hugh J. Foss (ヒウ・ゼ・フヲス) ed., 聖公会讃美歌 (1891), at the time titled 「いときよきかな」 | Reginald Heber (1783–1826) | John B. Dykes (1823–1876), tune "Nicaea" | 1891 | First Japanese translation appeared in 聖公会讃美歌 (Meiji 24, 1891) no. 96 — > 130 years ago. Wikisource ja hosts the full PD text |
+| 13 | エサイの根より | Es ist ein Ros entsprungen | Nakayama Masaki 中山昌樹 (1886–1944) | Anonymous 15th-century German hymn | Michael Praetorius (1571–1621), harmonization from *Musae Sioniae* (1609) | 1931 | Translator died 1944 (> 70 years); the German hymn and Praetorius's harmonization are PD by > 400 years. Wikipedia ja quotes the Nakayama translation in full |
+| 14 | 神はわがやぐら | Ein feste Burg ist unser Gott (Luther) | Editorial committee of 讃美歌 (1903) | Martin Luther (1483–1546) | Martin Luther (1483–1546) | 1903 | Luther's original is > 470 years old. Translation appeared in 讃美歌 (1903) — Meiji 36, > 120 years ago. Wikipedia ja quotes the 1903 text in full |
 
 ## English public-domain hymns
 
@@ -49,6 +51,8 @@ Users can add their own hymns through the in-browser UI on `/my`. These songs ar
 - [Wikipedia: 神の御子は今宵しも](https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AE%E5%BE%A1%E5%AD%90%E3%81%AF%E4%BB%8A%E5%AE%B5%E3%81%97%E3%82%82) — quotes the 1903/1954 translation
 - [Wikipedia: 神は愛なり](https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AF%E6%84%9B%E3%81%AA%E3%82%8A) — Mitani Taneyoshi's 1900 福音唱歌 lyrics
 - [Wikisource ja: 讃美歌 category](https://ja.wikisource.org/wiki/Category:%E8%AE%83%E7%BE%8E%E6%AD%8C) — PD-cleared Meiji/Taishō-era hymn texts with explicit copyright-expired markings (ああベツレヘムよ, 天にはさかえ, いざ歌えいざ祝え, 貴きみかみよ, 聖なる聖なる聖なるかな)
+- [Wikipedia: エサイの根より](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B5%E3%82%A4%E3%81%AE%E6%A0%B9%E3%82%88%E3%82%8A) — Nakayama Masaki's translation
+- [Wikipedia: 神はわがやぐら](https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AF%E3%82%8F%E3%81%8C%E3%82%84%E3%81%90%E3%82%89) — 1903 讃美歌 translation of Luther's Ein feste Burg
 - [PCUSA Historical Society blog on Julia N. Crosby](https://pcusa.org/news-storytelling/blogs/historical-society-blog/recovered-life-and-work-miss-julia-n-crosby)
 
 ## Avoided sources

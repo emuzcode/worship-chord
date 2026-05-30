@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "神はわがやぐら",
+    "subtitle": "Ein feste Burg ist unser Gott (Luther) — Japanese (讃美歌, 1903)",
+    "composer": "Martin Luther (1483–1546), tune \"Ein feste Burg\" (c. 1529)",
+    "lyricist": "Martin Luther (1483–1546), \"Ein feste Burg ist unser Gott\" (1527–1529) — Japanese translation by the editorial committee of 讃美歌 (1903)",
+    "year": 1903,
+    "key": "C",
+    "time": "4/4",
+    "tempo": 80,
+    "x_slug": "kami-wa-waga-yagura",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Luther's original German lyrics and tune (1527–1529) are PD by > 470 years. Japanese translation appeared in 讃美歌 (1903) — Meiji 36, > 120 years ago, edited by a committee whose members all died before 1955. Japanese Wikipedia quotes the 1903 text in full",
+    "x_translator": "Editorial committee of 讃美歌 (1903)",
+    "x_translator_death_year": 1903,
+    "x_source_url": "https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%81%AF%E3%82%8F%E3%81%8C%E3%82%84%E3%81%90%E3%82%89"
+  },
+  "chordpro": "{title: 神はわがやぐら}\n{subtitle: Ein feste Burg (Luther, 1529) — Japanese, 讃美歌 (1903) — \"the battle hymn of the Reformation\"}\n{key: C}\n{time: 4/4}\n{tempo: 80}\n{comment: Bach used this melody in Cantata BWV 80; Mendelssohn quoted it in his Reformation Symphony.}\n\n{start_of_verse: 1}\n[C]神はわが[G]やぐら [C]わが強き[G]盾\nkami wa waga yagura, waga tsuyoki tate\n[Am]苦しめる[F]ときの [C]近き[G]助[C]けぞ\nkurushimeru toki no, chikaki tasuke zo\n[C]おのが[F]力 [C]おのが[G]知恵を\nonoga chikara, onoga chie wo\n[Am]たのみと[Em]せる [F]よみの[G]おさぞ\ntanomi to seru, yomi no osa zo\n[C]げにお[F]ぞま[C]し[G]き[C]\ngeni ozomashiki\n{end_of_verse}\n\n{start_of_verse: 2}\n[C]いかに強[G]くとも [C]いかでか[G]頼まん\nikani tsuyoku tomo, ikade ka tanoman\n[Am]やがてはく[F]つべき [C]人のち[G]から[C]を\nyagate wa kutsubeki, hito no chikara wo\n[C]われと[F]ともに [C]たたかい[G]たもう\nware to tomo ni, tatakai tamou\n[Am]イエス[Em]きみこそ [F]万軍(ばんぐん)[G]の主なる\niesu kimi koso, bangun no shu naru\n[C]あまつ[F]おお[C]神[G]ぞ[C]\namatsu oo kami zo\n{end_of_verse}\n\n{start_of_verse: 3}\n[C]悪鬼(おに)は世[G]にみちて [C]よしおど[G]すとも\noni wa yo ni michite, yoshi odosu tomo\n[Am]神のまこ[F]とこそ [C]わがうち[G]にあ[C]れ\nkami no makoto koso, waga uchi ni are\n[C]よみの[F]おさよ [C]ほえたけ[G]りて\nyomi no osa yo, hoe takerite\n[Am]せまりく[Em]とも [F]主のさ[G]ばきは\nsemari ku tomo, shu no sabaki wa\n[C]なが上[F]にあ[C]り[G][C]\nnaga ue ni ari\n{end_of_verse}\n\n{start_of_verse: 4}\n[C]くらきのち[G]からの [C]よしふせ[G]ぐとも\nkuraki no chikara no, yoshi fusegu tomo\n[Am]主のみこ[F]とばこそ [C]すすみに[G]すす[C]め\nshu no mikotoba koso, susumi ni susume\n[C]わがいの[F]ちも [C]わが妻子(つまこ)[G]も\nwaga inochi mo, waga tsumako mo\n[Am]とらばと[Em]りね [F]神の国[G]は\ntoraba torine, kami no kuni wa\n[C]なおわ[F]れに[C]あ[G]り[C]\nnao ware ni ari\n{end_of_verse}\n"
+}
