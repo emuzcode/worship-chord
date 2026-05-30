@@ -5,11 +5,19 @@ export default async function Home() {
   const hymns = await getAllHymns();
   return (
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8">
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight">worship-chord</h1>
-        <p className="text-sm opacity-60 mt-1">
-          Public-domain hymns · {hymns.length} songs
-        </p>
+      <header className="mb-8 flex items-baseline justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">worship-chord</h1>
+          <p className="text-sm opacity-60 mt-1">
+            Public-domain hymns · {hymns.length} songs
+          </p>
+        </div>
+        <Link
+          href="/my"
+          className="text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap"
+        >
+          My Songs →
+        </Link>
       </header>
       <ul className="space-y-3">
         {hymns.map((hymn) => (
