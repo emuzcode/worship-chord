@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "O Sacred Head, Now Wounded",
+    "subtitle": "Passion Chorale — Hassler/Bach harmonization, English tr. James Waddel Alexander (1830)",
+    "composer": "Hans Leo Hassler (1564–1612), harmonization by J.S. Bach (1685–1750)",
+    "lyricist": "Bernard of Clairvaux (1090–1153, Latin) → Paul Gerhardt (1607–1676, German) → James Waddel Alexander (1804–1859, English, 1830)",
+    "year": 1830,
+    "key": "Em",
+    "time": "4/4",
+    "tempo": 64,
+    "x_slug": "o-sacred-head-now-wounded",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Bernard of Clairvaux (d. 1153), Gerhardt (d. 1676), Hassler (d. 1612), Bach (d. 1750), and Alexander (d. 1859) all died > 160 years ago",
+    "x_translator": "James Waddel Alexander (English)",
+    "x_translator_death_year": 1859,
+    "x_source_url": "https://en.wikipedia.org/wiki/O_Sacred_Head,_Now_Wounded"
+  },
+  "chordpro": "{title: O Sacred Head, Now Wounded}\n{subtitle: Passion Chorale — Bach's harmonization, English tr. J.W. Alexander, 1830}\n{key: Em}\n{time: 4/4}\n{tempo: 64}\n{comment: Bach used this chorale 5 times in the St. Matthew Passion. The Latin original is from Bernard of Clairvaux (12th c.).}\n\n{start_of_verse: 1}\n[Em]O sacred [B7]Head, now [Em]wounded\n[Am]With grief and [B7]shame weighed [Em]down\n[Em]Now scornfully [B7]sur[Em]rounded\n[Am]With thorns, Thine [B7]only [Em]crown\n[G]O sacred [D]Head, what [G]glory\n[Em]What bliss till [B7]now was [Em]Thine!\n[Em]Yet, though des[B7]pised and [Em]gory\n[Am]I joy to [B7]call Thee [Em]mine\n{end_of_verse}\n\n{start_of_verse: 2}\n[Em]What Thou, my [B7]Lord, hast [Em]suffered\n[Am]Was all for [B7]sinners' [Em]gain\n[Em]Mine, mine was [B7]the trans[Em]gression\n[Am]But Thine the [B7]deadly [Em]pain\n[G]Lo, here I [D]fall, my [G]Saviour!\n[Em]'Tis I de[B7]serve Thy [Em]place\n[Em]Look on me [B7]with Thy [Em]favor\n[Am]Vouchsafe to [B7]me Thy [Em]grace\n{end_of_verse}\n\n{start_of_verse: 3}\n[Em]What language [B7]shall I [Em]borrow\n[Am]To thank Thee, [B7]dearest [Em]Friend\n[Em]For this Thy [B7]dying [Em]sorrow\n[Am]Thy pity [B7]without [Em]end?\n[G]O make me [D]Thine for[G]ever\n[Em]And should I [B7]fainting [Em]be\n[Em]Lord, let me [B7]never, [Em]never\n[Am]Outlive my [B7]love to [Em]Thee\n{end_of_verse}\n"
+}

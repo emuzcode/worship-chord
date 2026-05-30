@@ -43,6 +43,13 @@ Included as reference and cultural background — many are the originals of Japa
 | 11 | O Little Town of Bethlehem | Phillips Brooks (1835–1893) | Lewis Redner (1831–1908), tune "St. Louis" | 1868 | Authors died > 100 years ago; pairs with ああベツレヘムよ |
 | 12 | Joy to the World | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Antioch" | 1719 | Authors died > 150 years ago; pairs with たみみなよろこべ / もろびとこぞりて |
 | 13 | A Mighty Fortress Is Our God | Martin Luther (1483–1546); Frederic Henry Hedge tr. (1853) | Martin Luther | 1853 | Luther > 470 yrs; Hedge (d. 1890) > 130 yrs. Pairs with 神はわがやぐら |
+| 14 | O Holy Night | Placide Cappeau (French); John Sullivan Dwight (English tr.) | Adolphe Adam (1803–1856) | 1855 | Adam, Cappeau, and Dwight all died > 100 years ago |
+| 15 | The First Noel | Anonymous (English traditional) | Anonymous English traditional | 1823 | Anonymous traditional carol, first published 1823 |
+| 16 | Silent Night | Joseph Mohr (German); John Freeman Young (English tr.) | Franz Xaver Gruber (1787–1863) | 1859 | Mohr (d. 1848), Gruber (d. 1863), Young (d. 1885) all > 130 years post-mortem |
+| 17 | O Sacred Head, Now Wounded | Bernard of Clairvaux → Gerhardt → J. W. Alexander (English, 1830) | Hans Leo Hassler (1564–1612), Bach harmonization | 1830 | All contributors died > 160 years ago |
+| 18 | All Hail the Power of Jesus' Name | Edward Perronet (1721–1792) | Oliver Holden (1765–1844), tune "Coronation" | 1779 | Authors died > 180 years ago |
+| 19 | Christ the Lord Is Risen Today | Charles Wesley (1707–1788) | Anonymous, "Easter Hymn" from *Lyra Davidica* (1708) | 1739 | Wesley died > 230 years ago |
+| 20 | When I Survey the Wondrous Cross | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Hamburg" | 1707 | Watts died > 275 years ago |
 
 ## User-added songs
 
