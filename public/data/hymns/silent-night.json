@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Silent Night",
+    "subtitle": "Stille Nacht — Mohr/Gruber (1818), English tr. John Freeman Young (1859)",
+    "composer": "Franz Xaver Gruber (1787–1863)",
+    "lyricist": "Joseph Mohr (1792–1848, German original); English translation by John Freeman Young (1820–1885)",
+    "year": 1859,
+    "key": "C",
+    "time": "6/8",
+    "tempo": 76,
+    "x_slug": "silent-night",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Mohr (d. 1848), Gruber (d. 1863), and Young (d. 1885) all died > 130 years ago",
+    "x_translator": "John Freeman Young (English) — pairs conceptually with きよしこの夜 (Japanese), though the standard Japanese 由木康 translation is still under copyright",
+    "x_translator_death_year": 1885,
+    "x_source_url": "https://en.wikipedia.org/wiki/Silent_Night"
+  },
+  "chordpro": "{title: Silent Night}\n{subtitle: Stille Nacht — Mohr/Gruber (1818), English tr. John Freeman Young (1859)}\n{key: C}\n{time: 6/8}\n{tempo: 76}\n{comment: UNESCO declared this an Intangible Cultural Heritage in 2011.}\n\n{start_of_verse: 1}\n[C]Silent night, holy [G]night\n[G]All is calm, all is [C]bright\n[F]Round yon Virgin [C]Mother and Child\n[F]Holy Infant so [C]tender and mild\n[G]Sleep in heavenly [C]peace\n[C]Sleep in heavenly [G]peace[C]\n{end_of_verse}\n\n{start_of_verse: 2}\n[C]Silent night, holy [G]night\n[G]Shepherds quake at the [C]sight\n[F]Glories stream from [C]heaven afar\n[F]Heavenly hosts sing [C]Alleluia!\n[G]Christ the Saviour is [C]born\n[C]Christ the Saviour is [G]born[C]\n{end_of_verse}\n\n{start_of_verse: 3}\n[C]Silent night, holy [G]night\n[G]Son of God, love's pure [C]light\n[F]Radiant beams from [C]Thy holy face\n[F]With the dawn of re[C]deeming grace\n[G]Jesus, Lord, at Thy [C]birth\n[C]Jesus, Lord, at Thy [G]birth[C]\n{end_of_verse}\n"
+}
