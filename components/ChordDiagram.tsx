@@ -7,6 +7,7 @@ import {
   getCachedDiagram,
   setCachedDiagram,
 } from "@/lib/chordDiagramCache";
+import { useThemeKey } from "@/lib/useThemeKey";
 
 type Size = "sm" | "md" | "lg";
 
@@ -30,6 +31,7 @@ type IdleGlobal = {
 function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(eager);
+  const theme = useThemeKey();
 
   // Lazy entry: wait for the palette item to scroll near the viewport before
   // we spend cycles drawing it. Eager skips the gate.
@@ -63,7 +65,7 @@ function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
     if (!el) return;
     el.style.width = `${WIDTH[size]}px`;
 
-    const cached = getCachedDiagram(chord, size);
+    const cached = getCachedDiagram(chord, size, theme);
     if (cached) {
       el.innerHTML = cached;
       return;
@@ -112,7 +114,7 @@ function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
           })
           .chord({ fingers, barres })
           .draw();
-        setCachedDiagram(chord, size, el.innerHTML);
+        setCachedDiagram(chord, size, theme, el.innerHTML);
       } catch (err) {
         console.warn("ChordDiagram render failed for", chord, err);
         el.textContent = `${chord} (render error)`;
@@ -129,7 +131,7 @@ function ChordDiagramImpl({ chord, size = "md", eager = false }: Props) {
       }
     }
     draw();
-  }, [chord, size, visible]);
+  }, [chord, size, visible, theme]);
 
   return (
     <div
