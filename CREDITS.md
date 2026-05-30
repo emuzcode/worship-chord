@@ -50,6 +50,12 @@ Included as reference and cultural background — many are the originals of Japa
 | 18 | All Hail the Power of Jesus' Name | Edward Perronet (1721–1792) | Oliver Holden (1765–1844), tune "Coronation" | 1779 | Authors died > 180 years ago |
 | 19 | Christ the Lord Is Risen Today | Charles Wesley (1707–1788) | Anonymous, "Easter Hymn" from *Lyra Davidica* (1708) | 1739 | Wesley died > 230 years ago |
 | 20 | When I Survey the Wondrous Cross | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Hamburg" | 1707 | Watts died > 275 years ago |
+| 21 | Rock of Ages | Augustus Toplady (1740–1778) | Thomas Hastings (1784–1872), tune "Toplady" | 1776 | Toplady died > 240 years ago |
+| 22 | Crown Him with Many Crowns | Matthew Bridges (1800–1894) & Godfrey Thring (1823–1903) | George J. Elvey (1816–1893), tune "Diademata" | 1851 | All > 120 years post-mortem |
+| 23 | For All the Saints | William Walsham How (1823–1897) | Ralph Vaughan Williams (1872–1958), tune "Sine Nomine" (1906) | 1864 | How d. 1897; tune publ. 1906, US PD via 95-year rule |
+| 24 | Praise to the Lord, the Almighty | Joachim Neander (1650–1680), tr. Catherine Winkworth (1827–1878) | Anonymous, tune "Lobe den Herren" from *Stralsund Gesangbuch* (1665) | 1863 | All > 140 years post-mortem |
+| 25 | Now Thank We All Our God | Martin Rinkart (1586–1649), tr. Catherine Winkworth (1827–1878) | Johann Crüger (1598–1662), tune "Nun danket alle Gott" | 1858 | All > 140 years post-mortem |
+| 26 | Of the Father's Love Begotten | Aurelius Prudentius (348–c. 413), tr. John Mason Neale (1818–1866) & Henry W. Baker (1821–1877) | Plainsong "Divinum Mysterium" (11th c.) | 1854 | Prudentius from 4th century; translators > 145 years post-mortem |
 
 ## African American spirituals
 
@@ -62,6 +68,9 @@ These spirituals predate or coincide with emancipation (1865) and have been in c
 | 3 | Were You There? | African American Passion spiritual | Traditional, publ. *Old Plantation Hymns* by W. E. Barton (1899) | 1899 | First spiritual ever published in a major denominational hymnal; > 125 years |
 | 4 | Steal Away | African American spiritual, c. 1862 | Wallace Willis (c. 1820–c. 1880) | publ. 1870s by the Fisk Jubilee Singers | Traditional, > 150 years |
 | 5 | Joshua Fit the Battle of Jericho | African American spiritual | Traditional, publ. by Fisk Jubilee Singers | 1872 | Traditional, > 150 years |
+| 6 | Nobody Knows the Trouble I've Seen | African American spiritual | Traditional, publ. *Slave Songs of the United States* (1867) | 1867 | One of the earliest published spirituals, > 150 years |
+| 7 | Deep River | African American spiritual | Traditional, publ. *The Story of the Jubilee Singers* (1875) | 1875 | Traditional, > 145 years |
+| 8 | Down by the Riverside | African American spiritual / peace song | Traditional, publ. *Plantation Melodies* (1918) | 1918 | Traditional with antebellum origin; US PD via 95-year rule |
 
 ## Celtic / Irish hymns
 
