@@ -129,7 +129,7 @@ function HymnListInner({ pdHymns }: Props) {
 
   return (
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
-      <header className="mb-8 flex items-baseline justify-between gap-4 content-backdrop">
+      <header className="mb-8 flex items-baseline justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight font-serif">
             worship-chord
@@ -161,7 +161,7 @@ function HymnListInner({ pdHymns }: Props) {
               <li key={h.metadata.x_slug} className="snap-start flex-shrink-0">
                 <Link
                   href={detailHref(h)}
-                  className="block w-[180px] p-3 rounded-lg border border-accent/30 hover:bg-accent/5 active:bg-accent/10 transition-colors content-backdrop"
+                  className="block w-[180px] p-3 rounded-lg bg-accent/[0.06] hover:bg-accent/10 active:bg-accent/15 transition-colors"
                 >
                   <h3 className="text-sm font-semibold font-serif truncate">
                     {h.metadata.title}
@@ -186,7 +186,7 @@ function HymnListInner({ pdHymns }: Props) {
               <li key={h.metadata.x_slug} className="snap-start flex-shrink-0">
                 <Link
                   href={detailHref(h)}
-                  className="block w-[180px] p-3 rounded-lg border border-foreground/10 hover:bg-foreground/5 active:bg-foreground/10 transition-colors content-backdrop"
+                  className="block w-[180px] p-3 rounded-lg bg-foreground/[0.03] hover:bg-foreground/[0.06] active:bg-foreground/10 transition-colors"
                 >
                   <h3 className="text-sm font-semibold font-serif truncate">
                     {h.metadata.title}
@@ -202,7 +202,7 @@ function HymnListInner({ pdHymns }: Props) {
       )}
 
       {visible.length === 0 ? (
-        <div className="opacity-60 text-center py-12 content-backdrop">
+        <div className="opacity-60 text-center py-12">
           <p>No hymns in this filter.</p>
           {category === "my" && (
             <p className="text-sm mt-2">
@@ -213,7 +213,7 @@ function HymnListInner({ pdHymns }: Props) {
           )}
         </div>
       ) : (
-        <ul className="space-y-3">
+        <ul className="divide-y divide-foreground/5">
           {visible.map((h, i) => (
             <li
               key={`${h.metadata.x_slug}-${i}`}
@@ -229,7 +229,7 @@ function HymnListInner({ pdHymns }: Props) {
                   e.preventDefault();
                   navigateWithTransition(() => router.push(detailHref(h)));
                 }}
-                className="block p-4 rounded-lg border border-foreground/10 hover:bg-foreground/5 active:bg-foreground/10 transition-colors content-backdrop"
+                className="block px-2 py-4 rounded-md hover:bg-foreground/[0.04] active:bg-foreground/[0.07] transition-colors"
               >
                 <h2
                   className="text-xl font-semibold font-serif"

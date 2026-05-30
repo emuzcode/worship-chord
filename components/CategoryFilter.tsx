@@ -21,7 +21,7 @@ export function CategoryFilter({ value, counts, onChange }: Props) {
   return (
     <nav
       aria-label="Hymn category filter"
-      className="flex gap-1 mb-6 border border-foreground/10 rounded-md p-1 bg-foreground/[0.02] overflow-x-auto snap-x snap-mandatory"
+      className="flex gap-1 mb-6 overflow-x-auto snap-x snap-mandatory"
     >
       {OPTIONS.map((opt) => {
         const active = value === opt.value;
@@ -37,7 +37,7 @@ export function CategoryFilter({ value, counts, onChange }: Props) {
             className={`flex-1 flex-shrink-0 snap-start min-w-[88px] px-3 py-2 rounded-md text-xs font-medium tracking-wide transition-all active:scale-95 ${
               active
                 ? "bg-foreground/10 text-foreground"
-                : "text-foreground/60 hover:text-foreground hover:bg-foreground/5"
+                : "text-foreground/60 hover:text-foreground/90"
             }`}
           >
             <span className="block">{opt.label}</span>
