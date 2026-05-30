@@ -7,13 +7,25 @@ export type StoredHymn = Hymn & {
   updatedAt: number;
 };
 
-const db = new Dexie("worship-chord") as Dexie & {
-  hymns: EntityTable<StoredHymn, "id">;
+export type Bookmark = {
+  slug: string;
+  addedAt: number;
 };
 
+const db = new Dexie("worship-chord") as Dexie & {
+  hymns: EntityTable<StoredHymn, "id">;
+  bookmarks: EntityTable<Bookmark, "slug">;
+};
+
+// v1: hymns only (user-added)
 db.version(1).stores({
-  // primary key + index on updatedAt for sorting
   hymns: "id, updatedAt",
+});
+
+// v2: added bookmarks (favorited slugs)
+db.version(2).stores({
+  hymns: "id, updatedAt",
+  bookmarks: "slug, addedAt",
 });
 
 export { db };

@@ -8,6 +8,7 @@ import { listMyHymns } from "@/lib/myHymns";
 import type { Hymn } from "@/lib/types";
 import { CategoryFilter, type HymnCategory } from "./CategoryFilter";
 import { getRecent } from "@/lib/recent";
+import { listBookmarks } from "@/lib/bookmarks";
 
 const JP_CHAR = /[぀-ゟ゠-ヿ一-鿿]/;
 
@@ -53,6 +54,13 @@ function HymnListInner({ pdHymns }: Props) {
     setRecentSlugs(getRecent());
   }, []);
 
+  const bookmarkRows =
+    useLiveQuery(() => listBookmarks(), [], [] as Awaited<ReturnType<typeof listBookmarks>>) ?? [];
+  const bookmarkSlugs = useMemo(
+    () => bookmarkRows.map((b) => b.slug),
+    [bookmarkRows]
+  );
+
   const combined: Hymn[] = useMemo(() => {
     const my: Hymn[] = myHymns.map((h) => ({
       metadata: h.metadata,
@@ -84,6 +92,14 @@ function HymnListInner({ pdHymns }: Props) {
       .filter((h): h is Hymn => h !== undefined)
       .slice(0, 5);
   }, [combined, recentSlugs]);
+
+  const favoriteHymns: Hymn[] = useMemo(() => {
+    if (bookmarkSlugs.length === 0) return [];
+    const bySlug = new Map(combined.map((h) => [h.metadata.x_slug, h]));
+    return bookmarkSlugs
+      .map((s) => bySlug.get(s))
+      .filter((h): h is Hymn => h !== undefined);
+  }, [combined, bookmarkSlugs]);
 
   function setFilter(next: HymnCategory) {
     setCategory(next);
@@ -123,6 +139,31 @@ function HymnListInner({ pdHymns }: Props) {
       </header>
 
       <CategoryFilter value={category} counts={counts} onChange={setFilter} />
+
+      {category === "all" && favoriteHymns.length > 0 && (
+        <section aria-label="Favorites" className="mb-6">
+          <h2 className="text-[10px] font-mono uppercase tracking-[0.15em] opacity-50 mb-2 text-amber-400">
+            ♥ Favorites
+          </h2>
+          <ul className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory">
+            {favoriteHymns.map((h) => (
+              <li key={h.metadata.x_slug} className="snap-start flex-shrink-0">
+                <Link
+                  href={detailHref(h)}
+                  className="block w-[180px] p-3 rounded-lg border border-amber-400/30 hover:bg-amber-400/5 active:bg-amber-400/10 transition-colors content-backdrop"
+                >
+                  <h3 className="text-sm font-semibold font-serif truncate">
+                    {h.metadata.title}
+                  </h3>
+                  <p className="text-[11px] opacity-60 mt-1 truncate">
+                    key {h.metadata.key}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {category === "all" && recentHymns.length > 0 && (
         <section aria-label="Recently viewed" className="mb-6">

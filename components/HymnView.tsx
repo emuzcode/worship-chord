@@ -8,6 +8,9 @@ import { ThemeToggle } from "./ThemeToggle";
 import { ChordPalette } from "./ChordPalette";
 import { ChordPopup } from "./ChordPopup";
 import { addRecent } from "@/lib/recent";
+import { useLiveQuery } from "dexie-react-hooks";
+import { db } from "@/lib/db";
+import { toggleBookmark } from "@/lib/bookmarks";
 
 type Props = {
   hymn: Hymn;
@@ -35,6 +38,13 @@ export function HymnView({ hymn }: Props) {
   useEffect(() => {
     if (hymn.metadata.x_slug) addRecent(hymn.metadata.x_slug);
   }, [hymn.metadata.x_slug]);
+
+  const slug = hymn.metadata.x_slug;
+  const bookmarked = useLiveQuery(
+    async () => (slug ? Boolean(await db.bookmarks.get(slug)) : false),
+    [slug],
+    false
+  );
 
   // Persist semitones into the URL whenever the user transposes.
   useEffect(() => {
@@ -111,16 +121,33 @@ export function HymnView({ hymn }: Props) {
 
   return (
     <article className="flex-1 flex flex-col w-full max-w-3xl mx-auto px-4 pb-32">
-      <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop">
-        <h1 className="text-3xl font-bold tracking-tight font-serif">
-          {hymn.metadata.title}
-        </h1>
-        {hymn.metadata.subtitle && (
-          <p className="text-lg opacity-70 mt-1">{hymn.metadata.subtitle}</p>
-        )}
-        <p className="text-sm opacity-50 mt-2">
-          {hymn.metadata.lyricist} / {hymn.metadata.composer} · {hymn.metadata.year}
-        </p>
+      <header className="pt-6 pb-4 border-b border-foreground/10 content-backdrop flex items-start justify-between gap-3">
+        <div className="flex-1 min-w-0">
+          <h1 className="text-3xl font-bold tracking-tight font-serif">
+            {hymn.metadata.title}
+          </h1>
+          {hymn.metadata.subtitle && (
+            <p className="text-lg opacity-70 mt-1">{hymn.metadata.subtitle}</p>
+          )}
+          <p className="text-sm opacity-50 mt-2">
+            {hymn.metadata.lyricist} / {hymn.metadata.composer} · {hymn.metadata.year}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => slug && toggleBookmark(slug)}
+          aria-pressed={bookmarked}
+          aria-label={
+            bookmarked ? "Remove from favorites" : "Add to favorites"
+          }
+          className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors ${
+            bookmarked
+              ? "text-amber-400"
+              : "text-foreground/40 hover:text-foreground/70"
+          }`}
+        >
+          {bookmarked ? "♥" : "♡"}
+        </button>
       </header>
 
       <ChordPalette chords={uniqueChords} onSelect={setPopupChord} />
