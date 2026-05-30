@@ -11,6 +11,7 @@ import { getRecent } from "@/lib/recent";
 import { listBookmarks } from "@/lib/bookmarks";
 import { navigateWithTransition } from "@/lib/viewTransition";
 import { Footer } from "./Footer";
+import { BrandMark } from "./BrandMark";
 
 const JP_CHAR = /[぀-ゟ゠-ヿ一-鿿]/;
 
@@ -129,21 +130,27 @@ function HymnListInner({ pdHymns }: Props) {
 
   return (
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
-      <header className="mb-8 flex items-baseline justify-between gap-4">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight font-serif">
-            worship-chord
-          </h1>
-          <p className="text-sm opacity-70 mt-1">
-            Japanese hymns shared with the world.
-          </p>
-          <p className="text-xs opacity-50 mt-0.5">
-            {counts.all} public-domain chord sheets · non-commercial
-          </p>
+      <header className="mb-8 flex items-start justify-between gap-4">
+        <div className="flex items-start gap-3 min-w-0">
+          <BrandMark
+            size={44}
+            className="text-accent flex-shrink-0 mt-[2px]"
+          />
+          <div className="min-w-0">
+            <h1 className="text-3xl font-bold tracking-tight font-serif">
+              worship-chord
+            </h1>
+            <p className="text-sm opacity-70 mt-1">
+              Japanese hymns shared with the world.
+            </p>
+            <p className="text-xs opacity-50 mt-0.5">
+              {counts.all} public-domain chord sheets · non-commercial
+            </p>
+          </div>
         </div>
         <Link
           href="/my"
-          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap"
+          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap mt-1"
         >
           My Songs →
         </Link>
