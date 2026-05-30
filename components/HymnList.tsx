@@ -113,7 +113,7 @@ function HymnListInner({ pdHymns }: Props) {
       .filter((h): h is Hymn => h !== undefined);
   }, [combined, bookmarkSlugs]);
 
-  const PAGE_SIZE = 20;
+  const PAGE_SIZE = 12;
   const [shown, setShown] = useState(PAGE_SIZE);
 
   // The mobile bottom quick-actions nav fights with the hero CTA on the
@@ -287,14 +287,16 @@ function HymnListInner({ pdHymns }: Props) {
         </div>
       ) : (
         <>
-          <ul className="divide-y divide-foreground/5">
+          <ul className="divide-y divide-foreground/5 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
             {visible.slice(0, shown).map((h, i) => {
               const newRow = i >= prevShownRef.current;
-              const delay = newRow ? (i - prevShownRef.current) * 50 : 0;
+              const delay = newRow ? (i - prevShownRef.current) * 40 : 0;
               return (
                 <li
                   key={`${h.metadata.x_slug}-${i}`}
-                  className={newRow ? "fade-up" : undefined}
+                  className={`sm:border-b sm:border-foreground/5 ${
+                    newRow ? "fade-up" : ""
+                  }`}
                   style={newRow ? { animationDelay: `${delay}ms` } : undefined}
                 >
                   <Link
@@ -306,20 +308,19 @@ function HymnListInner({ pdHymns }: Props) {
                       e.preventDefault();
                       navigateWithTransition(() => router.push(detailHref(h)));
                     }}
-                    className="block px-2 py-4 rounded-md hover:bg-foreground/[0.04] active:bg-foreground/[0.07] transition-colors"
+                    className="flex items-baseline gap-3 px-2 py-2.5 rounded-md hover:bg-foreground/[0.04] active:bg-foreground/[0.07] transition-colors"
                   >
                     <h2
-                      className="text-xl font-semibold font-serif"
+                      className="text-base font-semibold font-serif truncate flex-1 min-w-0"
                       style={{
                         viewTransitionName: `hymn-title-${h.metadata.x_slug}`,
                       }}
                     >
                       {h.metadata.title}
                     </h2>
-                    <p className="text-sm opacity-60 mt-1">
-                      {h.metadata.lyricist || "—"} · {h.metadata.year} · key{" "}
-                      {h.metadata.key}
-                    </p>
+                    <span className="text-[11px] opacity-50 font-mono whitespace-nowrap flex-shrink-0">
+                      {h.metadata.year} · {h.metadata.key}
+                    </span>
                   </Link>
                 </li>
               );
