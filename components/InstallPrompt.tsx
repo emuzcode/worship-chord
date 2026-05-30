@@ -35,7 +35,7 @@ export function InstallPrompt() {
   if (!show) return null;
 
   return (
-    <div className="fixed top-3 left-3 right-3 z-50 p-3 rounded-lg border border-amber-500/40 bg-background/90 backdrop-blur text-sm flex items-start gap-3 max-w-md mx-auto">
+    <div className="fixed top-3 left-3 right-3 z-50 p-3 rounded-lg border border-accent/40 bg-background/90 backdrop-blur text-sm flex items-start gap-3 max-w-md mx-auto">
       <div className="flex-1">
         <p className="font-semibold mb-1">Install worship-chord</p>
         <p className="opacity-80">

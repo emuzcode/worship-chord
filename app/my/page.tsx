@@ -110,7 +110,7 @@ export default function MyPage() {
         <button
           type="button"
           onClick={startNew}
-          className="px-4 py-2 rounded-md border border-amber-400 bg-amber-400/15 text-amber-300 hover:bg-amber-400/25 transition-colors text-sm font-semibold whitespace-nowrap"
+          className="px-4 py-2 rounded-md border border-accent bg-accent/15 text-accent hover:bg-accent/25 active:scale-95 transition-all text-sm font-semibold whitespace-nowrap"
         >
           + Add
         </button>

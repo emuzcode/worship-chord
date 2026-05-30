@@ -3,10 +3,16 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Risograph-offset palette (mock-confirmed) */
+  /* Risograph-offset palette (mock-confirmed). --color-chord is reserved for
+   * the cymatic visual language (chord glyphs + sparse motif tint).
+   * --color-accent carries the same hue but is the semantic role for CTAs,
+   * favorites, and emphasis — so future palette tweaks can move one without
+   * dragging the other.
+   */
   --color-bg: #f7f7f5;
   --color-fg: #0e0e10;
   --color-chord: #c26817;
+  --color-accent: #c26817;
   --grain-opacity: 0.05;
   --hairline-opacity: 0.10;
 }
@@ -15,6 +21,7 @@
   --color-bg: #0e0e10;
   --color-fg: #f7f7f5;
   --color-chord: #fbbf24;
+  --color-accent: #fbbf24;
   --grain-opacity: 0.07;
   --hairline-opacity: 0.13;
 }
@@ -22,6 +29,7 @@
 @theme inline {
   --color-background: var(--color-bg);
   --color-foreground: var(--color-fg);
+  --color-accent: var(--color-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-lora);

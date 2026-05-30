@@ -157,7 +157,7 @@ export function HymnView({ hymn }: Props) {
           }
           className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 ${
             bookmarked
-              ? "text-amber-400"
+              ? "text-accent"
               : "text-foreground/40 hover:text-foreground/70"
           }`}
         >

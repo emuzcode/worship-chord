@@ -143,7 +143,7 @@ function HymnListInner({ pdHymns }: Props) {
 
       {category === "all" && favoriteHymns.length > 0 && (
         <section aria-label="Favorites" className="mb-6">
-          <h2 className="text-[10px] font-mono uppercase tracking-[0.15em] opacity-50 mb-2 text-amber-400">
+          <h2 className="text-[10px] font-mono uppercase tracking-[0.15em] opacity-50 mb-2 text-accent">
             ♥ Favorites
           </h2>
           <ul className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory">
@@ -151,7 +151,7 @@ function HymnListInner({ pdHymns }: Props) {
               <li key={h.metadata.x_slug} className="snap-start flex-shrink-0">
                 <Link
                   href={detailHref(h)}
-                  className="block w-[180px] p-3 rounded-lg border border-amber-400/30 hover:bg-amber-400/5 active:bg-amber-400/10 transition-colors content-backdrop"
+                  className="block w-[180px] p-3 rounded-lg border border-accent/30 hover:bg-accent/5 active:bg-accent/10 transition-colors content-backdrop"
                 >
                   <h3 className="text-sm font-semibold font-serif truncate">
                     {h.metadata.title}
@@ -249,7 +249,7 @@ function HymnListInner({ pdHymns }: Props) {
           </span>
           <Link
             href="/my"
-            className="px-4 py-2 rounded-md border border-amber-400/60 text-amber-300 hover:bg-amber-400/10 active:scale-95 transition-all text-sm"
+            className="px-4 py-2 rounded-md border border-accent/60 text-accent hover:bg-accent/10 active:scale-95 transition-all text-sm"
           >
             My Songs →
           </Link>

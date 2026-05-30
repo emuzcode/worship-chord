@@ -5,7 +5,7 @@ export default function NotFound() {
     <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-20 flex flex-col items-center text-center content-backdrop">
       <div
         aria-hidden="true"
-        className="text-[8rem] leading-none font-serif text-amber-400/80 select-none"
+        className="text-[8rem] leading-none font-serif text-accent/80 select-none"
         style={{
           fontFamily:
             "'Hiragino Sans', 'Yu Gothic', 'Noto Sans CJK JP', sans-serif",
@@ -22,7 +22,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-8 px-5 py-2 rounded-md border border-amber-400 text-amber-300 bg-amber-400/10 hover:bg-amber-400/20 active:scale-95 transition-all text-sm font-semibold"
+        className="mt-8 px-5 py-2 rounded-md border border-accent text-accent bg-accent/10 hover:bg-accent/20 active:scale-95 transition-all text-sm font-semibold"
       >
         ← Back to all hymns
       </Link>

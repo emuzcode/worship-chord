@@ -130,7 +130,7 @@ export function HymnEditor({ hymn, onDone, onCancel }: Props) {
           aria-live="polite"
           className={`fade-up fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-md text-sm border content-backdrop ${
             flash.kind === "saved"
-              ? "border-amber-400/40 text-amber-300"
+              ? "border-accent/40 text-accent"
               : "border-red-500/40 text-red-400"
           }`}
         >
@@ -236,7 +236,7 @@ export function HymnEditor({ hymn, onDone, onCancel }: Props) {
               type="button"
               onClick={handleSave}
               disabled={saving}
-              className="px-5 py-2 rounded-md border border-amber-400 bg-amber-400/15 text-amber-300 hover:bg-amber-400/25 active:scale-95 transition-all text-sm font-semibold disabled:opacity-50 disabled:cursor-wait"
+              className="px-5 py-2 rounded-md border border-accent bg-accent/15 text-accent hover:bg-accent/25 active:scale-95 transition-all text-sm font-semibold disabled:opacity-50 disabled:cursor-wait"
             >
               {saving ? (
                 <>
