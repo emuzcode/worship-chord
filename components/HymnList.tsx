@@ -115,6 +115,25 @@ function HymnListInner({ pdHymns }: Props) {
 
   const PAGE_SIZE = 20;
   const [shown, setShown] = useState(PAGE_SIZE);
+
+  // The mobile bottom quick-actions nav fights with the hero CTA on the
+  // first viewport, so we only fade it in once the browse section has
+  // actually intersected — i.e. the user has scrolled past the hero.
+  const [showBottomNav, setShowBottomNav] = useState(false);
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") {
+      setShowBottomNav(true);
+      return;
+    }
+    const target = document.getElementById("hymn-browser");
+    if (!target) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowBottomNav(entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, []);
   // Tracks how many rows were shown before the most recent "Show more" so
   // that fade-up animationDelay only cascades over the newly revealed batch
   // instead of running across the entire list every time.
@@ -322,7 +341,10 @@ function HymnListInner({ pdHymns }: Props) {
 
       <nav
         aria-label="Quick actions"
-        className="fixed bottom-0 left-0 right-0 z-30 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:hidden"
+        aria-hidden={!showBottomNav}
+        className={`fixed bottom-0 left-0 right-0 z-30 bg-background/95 backdrop-blur border-t border-foreground/10 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:hidden transition-opacity duration-200 ${
+          showBottomNav ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
       >
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <span className="text-xs opacity-50 font-mono">
