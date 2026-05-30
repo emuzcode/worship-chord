@@ -35,6 +35,9 @@ Included as reference and cultural background — many are the originals of Japa
 | 3 | It Is Well with My Soul | Horatio Spafford (1828–1888) | Philip Bliss (1838–1876) | 1873 | US Copyright Office 1978 determination of PD |
 | 4 | Holy, Holy, Holy! | Reginald Heber (1783–1826) | John B. Dykes (1823–1876) | 1826 / 1861 | Authors died > 150 years ago |
 | 5 | Great Is Thy Faithfulness | Thomas Chisholm (1866–1960) | William Runyan (1870–1957) | 1923 | Entered US PD in 2019 (95-year rule) |
+| 6 | We Three Kings | John Henry Hopkins Jr. (1820–1891) | John Henry Hopkins Jr. (1820–1891) | 1857 | Author/composer died > 130 years ago |
+| 7 | Angels We Have Heard on High | Anonymous French + James Chadwick (1813–1882) | Traditional French "Gloria" | 1862 | Chadwick died > 140 years ago; French original is anonymous and PD |
+| 8 | I Heard the Bells on Christmas Day | Henry Wadsworth Longfellow (1807–1882) | John Baptiste Calkin (1827–1905), tune "Waltham" | 1863 | Authors died > 100 years ago |
 
 ## User-added songs
 

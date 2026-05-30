@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "I Heard the Bells on Christmas Day",
+    "subtitle": "Longfellow's Christmas carol of peace amid war",
+    "composer": "John Baptiste Calkin (1827–1905), tune \"Waltham\" (1872)",
+    "lyricist": "Henry Wadsworth Longfellow (1807–1882), \"Christmas Bells\" (1863)",
+    "year": 1863,
+    "key": "F",
+    "time": "4/4",
+    "tempo": 80,
+    "x_slug": "i-heard-the-bells",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Longfellow's original 1863 poem and Calkin's 1872 \"Waltham\" tune are both PD by > 140 years. Authors died > 100 years ago. Lyrics quoted in full on English Wikipedia",
+    "x_translator": "N/A (English original)",
+    "x_translator_death_year": 1882,
+    "x_source_url": "https://en.wikipedia.org/wiki/I_Heard_the_Bells_on_Christmas_Day"
+  },
+  "chordpro": "{title: I Heard the Bells on Christmas Day}\n{subtitle: Henry Wadsworth Longfellow, 1863 / John Baptiste Calkin tune \"Waltham\", 1872}\n{key: F}\n{time: 4/4}\n{tempo: 80}\n{comment: Written during the American Civil War. The closing verses turn from despair to hope: \"God is not dead, nor doth He sleep.\"}\n\n{start_of_verse: 1}\n[F]I heard the [Bb]bells on [F]Christmas [C]Day\n[F]Their old, fa[Bb]miliar [C]carols [F]play\n[Dm]And wild and [Am]sweet [Bb]the words re[C]peat\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\n{end_of_verse}\n\n{start_of_verse: 2}\n[F]And thought how, [Bb]as the [F]day had [C]come\n[F]The belfries [Bb]of all [C]Christen[F]dom\n[Dm]Had rolled a[Am]long [Bb]the unbroken [C]song\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\n{end_of_verse}\n\n{start_of_verse: 3}\n[F]Till ringing, [Bb]singing [F]on its [C]way\n[F]The world re[Bb]volved from [C]night to [F]day\n[Dm]A voice, a [Am]chime, [Bb]a chant sub[C]lime\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\n{end_of_verse}\n\n{start_of_verse: 4}\n[F]Then from each [Bb]black, ac[F]cursed [C]mouth\n[F]The cannon [Bb]thundered [C]in the [F]South\n[Dm]And with the [Am]sound [Bb]the carols [C]drowned\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\n{end_of_verse}\n\n{start_of_verse: 5}\n[F]It was as if [Bb]an earth[F]quake [C]rent\n[F]The hearth-[Bb]stones of a [C]conti[F]nent\n[Dm]And made for[Am]lorn [Bb]the households [C]born\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\n{end_of_verse}\n\n{start_of_verse: 6}\n[F]And in des[Bb]pair I [F]bowed my [C]head\n[F]\"There is no [Bb]peace on [C]earth,\" I [F]said\n[Dm]\"For hate is [Am]strong, [Bb]and mocks the [C]song\n[F]Of peace on [Bb]earth, good-[C]will to [F]men!\"\n{end_of_verse}\n\n{start_of_verse: 7}\n[F]Then pealed the [Bb]bells more [F]loud and [C]deep:\n[F]\"God is not [Bb]dead, nor [C]doth He [F]sleep\n[Dm]The Wrong shall [Am]fail, [Bb]the Right pre[C]vail\n[F]With peace on [Bb]earth, good-[C]will to [F]men.\"\n{end_of_verse}\n"
+}
