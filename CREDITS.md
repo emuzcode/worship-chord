@@ -51,6 +51,30 @@ Included as reference and cultural background — many are the originals of Japa
 | 19 | Christ the Lord Is Risen Today | Charles Wesley (1707–1788) | Anonymous, "Easter Hymn" from *Lyra Davidica* (1708) | 1739 | Wesley died > 230 years ago |
 | 20 | When I Survey the Wondrous Cross | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Hamburg" | 1707 | Watts died > 275 years ago |
 
+## African American spirituals
+
+These spirituals predate or coincide with emancipation (1865) and have been in continuous traditional use. All are public domain.
+
+| # | Title | Origin | Composer/Lyricist | Published | PD basis |
+|---|---|---|---|---|---|
+| 1 | Swing Low, Sweet Chariot | African American spiritual, c. 1862 | Often attributed to Wallace Willis (c. 1820–c. 1880) | publ. 1872 (*Jubilee Songs*) | Traditional 19th-century spiritual, > 150 years |
+| 2 | Go Tell It on the Mountain | African American Christmas spiritual | Traditional; published by John W. Work II (1871–1925) | 1907 | Both song and Work II's compilation > 100 years |
+| 3 | Were You There? | African American Passion spiritual | Traditional, publ. *Old Plantation Hymns* by W. E. Barton (1899) | 1899 | First spiritual ever published in a major denominational hymnal; > 125 years |
+| 4 | Steal Away | African American spiritual, c. 1862 | Wallace Willis (c. 1820–c. 1880) | publ. 1870s by the Fisk Jubilee Singers | Traditional, > 150 years |
+| 5 | Joshua Fit the Battle of Jericho | African American spiritual | Traditional, publ. by Fisk Jubilee Singers | 1872 | Traditional, > 150 years |
+
+## Celtic / Irish hymns
+
+| # | Title | Lyricist (translator if applicable) | Composer | Year | PD basis |
+|---|---|---|---|---|---|
+| 1 | I Bind Unto Myself Today (St. Patrick's Breastplate) | St. Patrick (c. 387–461) / English tr. Cecil Frances Alexander (1818–1895) | Irish traditional, arr. C. V. Stanford (1852–1924) | 1889 (tr.) / 1902 (arr.) | Original is 5th-century Old Irish; translator died 1895; arranger died 1924 — all PD |
+
+## Nordic hymns
+
+| # | Title | Lyricist (translator if applicable) | Composer | Year | PD basis |
+|---|---|---|---|---|---|
+| 1 | Be Still, My Soul | Katharina von Schlegel (b. 1697, German); English tr. Jane Borthwick (1813–1897) | Jean Sibelius (1865–1957), tune "Finlandia" (1899) | 1855 (tr.) / 1899 (tune) | Schlegel > 270 yrs; Borthwick d. 1897 (> 125 yrs); Finlandia is PD in the US (pre-1923 publication) |
+
 ## User-added songs
 
 Users can add their own hymns through the in-browser UI on `/my`. These songs are stored locally in the user's browser (IndexedDB via Dexie.js) and are **never** transmitted to the server or included in this repository. Users are responsible for ensuring their own additions comply with applicable copyright law.
