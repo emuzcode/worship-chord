@@ -10,6 +10,9 @@ Most Japanese church songs of the Meiji (1868–1912) and Taishō (1912–1926) 
 |---|---|---|---|---|---|---|---|
 | 1 | 主われを愛す | Jesus Loves Me, This I Know | Julia N. Crosby (1833–1918) | Anna B. Warner (1822–1915) | William B. Bradbury (1816–1868) | 1872 | Translator died 1918 (> 70 years); original authors died > 100 years ago |
 | 2 | いつくしみ深き | What a Friend We Have in Jesus | Editorial committee of 新撰讃美歌 (1888): Okuno Masatsuna (1823–1910), Uemura Masahisa (1858–1925), Matsuyama Takayoshi (1846–1935) | Joseph M. Scriven (1819–1886) | Charles C. Converse (1832–1918) | 1888 | All three Japanese editors died > 70 years ago (latest 1935); original authors died > 100 years ago |
+| 3 | 主よ御許に近づかん | Nearer, My God, to Thee | Editorial committee of 摂津第一公会『讃美歌集』 (1874) | Sarah Flower Adams (1805–1848) | Lowell Mason (1792–1872), tune "Bethany" | 1874 | First published in the Settsu Daiichi Kōkai hymnal (Meiji 7, 1874) — > 150 years ago; original authors died > 150 years ago |
+| 4 | もろびとこぞりて | Hark the Glad Sound! (sung to "Antioch") | Editorial committee of 讃美歌 (1923 / 1954) | Philip Doddridge (1702–1751) | Lowell Mason (1792–1872), tune "Antioch" (after Handel) | 1923 | Translation first appeared in 讃美歌 (1923); current form reflects the 1954 revision. Original authors died > 150 years ago. Japanese Wikipedia quotes the text in full as PD-cleared |
+| 5 | たみみなよろこべ | Joy to the World (sung to "Antioch") | Editorial committee of 讃美歌 (1922) | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Antioch" (after Handel) | 1922 | First published in 讃美歌 (1922) no. 58, > 100 years ago; original authors died > 150 years ago |
 
 ## English public-domain hymns
 
@@ -34,6 +37,8 @@ Users can add their own hymns through the in-browser UI on `/my`. These songs ar
 - [Wikisource Hymns Portal](https://en.wikisource.org/wiki/Portal:Hymns) — secondary verification
 - [Public Domain Sherpa](https://www.publicdomainsherpa.com/) — PD status reference
 - [Wikipedia: 主われを愛す](https://ja.wikipedia.org/wiki/%E4%B8%BB%E3%82%8F%E3%82%8C%E3%82%92%E6%84%9B%E3%81%99) — Japanese translation history
+- [Wikipedia: 主よ御許に近づかん](https://ja.wikipedia.org/wiki/%E4%B8%BB%E3%82%88%E5%BE%A1%E8%A8%B1%E3%81%AB%E8%BF%91%E3%81%A5%E3%81%8B%E3%82%93) — quotes the 1874 Settsu Daiichi Kōkai translation
+- [Wikipedia: もろびとこぞりて](https://ja.wikipedia.org/wiki/%E3%82%82%E3%82%8D%E3%81%B3%E3%81%A8%E3%81%93%E3%81%9E%E3%82%8A%E3%81%A6) — quotes the 1923/1954 もろびとこぞりて and 1922 たみみなよろこべ translations as PD
 - [PCUSA Historical Society blog on Julia N. Crosby](https://pcusa.org/news-storytelling/blogs/historical-society-blog/recovered-life-and-work-miss-julia-n-crosby)
 
 ## Avoided sources
