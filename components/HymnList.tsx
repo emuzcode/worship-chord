@@ -128,45 +128,69 @@ function HymnListInner({ pdHymns }: Props) {
       : `/${h.metadata.x_slug}`;
   }
 
+  function scrollToBrowser() {
+    if (typeof window === "undefined") return;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    document.getElementById("hymn-browser")?.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "start",
+    });
+  }
+
   return (
-    <main className="flex-1 w-full max-w-3xl mx-auto px-4 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8">
+    <main className="flex-1 w-full">
       <section
         aria-labelledby="brand-heading"
-        className="text-center pt-14 pb-16 sm:pt-24 sm:pb-24"
+        className="relative w-full min-h-screen min-h-[100dvh] flex flex-col px-4 text-center"
+        style={{ paddingTop: "calc(env(safe-area-inset-top) + 3rem)" }}
       >
-        <h1 id="brand-heading" className="inline-block text-accent">
-          <BrandMark className="mx-auto w-[240px] sm:w-[360px] h-auto" />
-          <span className="sr-only">MIZMOR — worship-chord</span>
-        </h1>
-        <p
-          lang="he"
-          className="font-serif text-2xl opacity-55 mt-8 select-all"
-          aria-hidden="true"
+        <div className="flex-1 flex flex-col justify-center items-center">
+          <h1 id="brand-heading" className="inline-block text-accent">
+            <BrandMark className="mx-auto w-[240px] sm:w-[360px] h-auto" />
+            <span className="sr-only">MIZMOR — worship-chord</span>
+          </h1>
+          <p
+            lang="he"
+            className="font-serif text-2xl opacity-55 mt-8 select-all"
+            aria-hidden="true"
+          >
+            מִזְמוֹר
+          </p>
+          <p className="font-serif italic text-base opacity-70 mt-3 max-w-md">
+            A song struck on strings.
+          </p>
+          <div className="mt-12 h-px w-16 bg-foreground/15" />
+        </div>
+        <button
+          type="button"
+          onClick={scrollToBrowser}
+          aria-label="Browse the hymns"
+          className="absolute left-1/2 -translate-x-1/2 text-[10px] tracking-[0.25em] uppercase font-mono opacity-40 hover:opacity-70 transition-opacity active:scale-95 px-3 py-2"
+          style={{ bottom: "calc(env(safe-area-inset-bottom) + 1.5rem)" }}
         >
-          מִזְמוֹר
-        </p>
-        <p className="font-serif italic text-base opacity-70 mt-3 max-w-md mx-auto">
-          A song struck on strings.
-        </p>
-        <div className="mt-12 h-px w-16 mx-auto bg-foreground/15" />
-        <p className="text-[10px] tracking-[0.25em] uppercase opacity-40 mt-8">
           ↓ Browse the hymns
-        </p>
+        </button>
       </section>
 
-      <div className="flex items-baseline justify-between mb-4">
-        <p className="text-xs opacity-50 font-mono">
-          {counts.all} hymns · public-domain · non-commercial
-        </p>
-        <Link
-          href="/my"
-          className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity"
-        >
-          My Songs →
-        </Link>
-      </div>
+      <div
+        id="hymn-browser"
+        className="w-full max-w-3xl mx-auto px-4 pb-[calc(7rem+env(safe-area-inset-bottom))] sm:pb-8 scroll-mt-4"
+      >
+        <div className="flex items-baseline justify-between mb-4">
+          <p className="text-xs opacity-50 font-mono">
+            {counts.all} hymns · public-domain · non-commercial
+          </p>
+          <Link
+            href="/my"
+            className="hidden sm:inline text-sm opacity-70 hover:opacity-100 transition-opacity"
+          >
+            My Songs →
+          </Link>
+        </div>
 
-      <CategoryFilter value={category} counts={counts} onChange={setFilter} />
+        <CategoryFilter value={category} counts={counts} onChange={setFilter} />
 
       {category === "all" && favoriteHymns.length > 0 && (
         <section aria-label="Favorites" className="mb-6">
@@ -266,7 +290,8 @@ function HymnListInner({ pdHymns }: Props) {
         </ul>
       )}
 
-      <Footer />
+        <Footer />
+      </div>
 
       <nav
         aria-label="Quick actions"
