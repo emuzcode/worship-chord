@@ -4,6 +4,7 @@ import "./globals.css";
 import { SWRegister } from "@/components/SWRegister";
 import { InstallPrompt } from "@/components/InstallPrompt";
 import { AmbientMotif } from "@/components/AmbientMotif";
+import { RippleEffect } from "@/components/RippleEffect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col relative">
         <AmbientMotif />
+        <RippleEffect />
         <SWRegister />
         <InstallPrompt />
         <div className="relative z-[1] flex flex-col min-h-full">{children}</div>
