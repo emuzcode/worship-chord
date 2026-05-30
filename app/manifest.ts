@@ -8,14 +8,15 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "worship-chord",
     description:
       "Dark-mode chord & lyric viewer for public-domain hymns. Built for low-light environments.",
-    start_url: "/",
+    start_url: "/worship-chord/",
+    scope: "/worship-chord/",
     display: "standalone",
     orientation: "any",
     background_color: "#0a0a0a",
     theme_color: "#0a0a0a",
     icons: [
       {
-        src: "/icon.svg",
+        src: "/worship-chord/icon.svg",
         sizes: "any",
         type: "image/svg+xml",
         purpose: "any",
