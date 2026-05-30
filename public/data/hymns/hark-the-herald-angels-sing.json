@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Hark! The Herald Angels Sing",
+    "subtitle": "Charles Wesley (1739) + Mendelssohn tune (1840)",
+    "composer": "Felix Mendelssohn (1809–1847), tune from \"Festgesang\" (1840), adapted by William H. Cummings",
+    "lyricist": "Charles Wesley (1707–1788), with revisions by George Whitefield (1714–1770) and others",
+    "year": 1739,
+    "key": "F",
+    "time": "4/4",
+    "tempo": 100,
+    "x_slug": "hark-the-herald-angels-sing",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Wesley's text (d. 1788) and Mendelssohn's tune (d. 1847) are PD by > 150 years",
+    "x_translator": "N/A (English original) — paired with 天にはさかえ (Japanese, 1891)",
+    "x_translator_death_year": 1788,
+    "x_source_url": "https://en.wikipedia.org/wiki/Hark!_The_Herald_Angels_Sing"
+  },
+  "chordpro": "{title: Hark! The Herald Angels Sing}\n{subtitle: Charles Wesley, 1739 / Felix Mendelssohn tune, 1840}\n{key: F}\n{time: 4/4}\n{tempo: 100}\n{comment: Pair with 天にはさかえ (Japanese translation in 聖公会讃美歌, 1891).}\n\n{start_of_verse: 1}\n[F]Hark! the [Bb]herald [F]angels [C]sing\n[F]\"Glory [Bb]to the [C]newborn [F]King!\n[Dm]Peace on [Am]earth and [Bb]mercy [C]mild\n[F]God and [Bb]sinners [C]recon[F]ciled!\"\n[F]Joyful, [C]all ye [Dm]nations [Am]rise\n[Bb]Join the [F]triumph [G]of the [C]skies\n[F]With th'an[Dm]gelic [Bb]host pro[C]claim:\n[F]\"Christ is [Bb]born in [C]Bethle[F]hem!\"\n{end_of_verse}\n\n{start_of_chorus}\n[F]Hark! the [Bb]herald [F]angels [C]sing\n[F]\"Glory [Bb]to the [C]newborn [F]King!\"\n{end_of_chorus}\n\n{start_of_verse: 2}\n[F]Christ, by [Bb]highest [F]heav'n a[C]dored\n[F]Christ, the [Bb]ever[C]lasting [F]Lord!\n[Dm]Late in [Am]time be[Bb]hold Him [C]come\n[F]Offspring [Bb]of a [C]virgin's [F]womb\n[F]Veiled in [C]flesh the [Dm]Godhead [Am]see\n[Bb]Hail the [F]incar[G]nate De[C]ity\n[F]Pleased as [Dm]man with [Bb]man to [C]dwell\n[F]Jesus, [Bb]our Em[C]manu[F]el!\n{end_of_verse}\n\n{start_of_verse: 3}\n[F]Hail the [Bb]heav'n-[F]born Prince of [C]Peace!\n[F]Hail the [Bb]Sun of [C]Righteous[F]ness!\n[Dm]Light and [Am]life to [Bb]all He [C]brings\n[F]Ris'n with [Bb]healing [C]in His [F]wings\n[F]Mild He [C]lays His [Dm]glory [Am]by\n[Bb]Born that [F]man no [G]more may [C]die\n[F]Born to [Dm]raise the [Bb]sons of [C]earth\n[F]Born to [Bb]give them [C]second [F]birth!\n{end_of_verse}\n"
+}

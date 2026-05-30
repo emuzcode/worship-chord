@@ -38,6 +38,11 @@ Included as reference and cultural background — many are the originals of Japa
 | 6 | We Three Kings | John Henry Hopkins Jr. (1820–1891) | John Henry Hopkins Jr. (1820–1891) | 1857 | Author/composer died > 130 years ago |
 | 7 | Angels We Have Heard on High | Anonymous French + James Chadwick (1813–1882) | Traditional French "Gloria" | 1862 | Chadwick died > 140 years ago; French original is anonymous and PD |
 | 8 | I Heard the Bells on Christmas Day | Henry Wadsworth Longfellow (1807–1882) | John Baptiste Calkin (1827–1905), tune "Waltham" | 1863 | Authors died > 100 years ago |
+| 9 | O Come, All Ye Faithful | John Francis Wade (Latin); Frederick Oakeley (English, 1841) | John Francis Wade (c. 1711–1786) | 1841 | Wade and Oakeley both PD; pairs with 神の御子は今宵しも |
+| 10 | Hark! The Herald Angels Sing | Charles Wesley (1707–1788) | Felix Mendelssohn (1809–1847) | 1739 | Authors died > 150 years ago; pairs with 天にはさかえ |
+| 11 | O Little Town of Bethlehem | Phillips Brooks (1835–1893) | Lewis Redner (1831–1908), tune "St. Louis" | 1868 | Authors died > 100 years ago; pairs with ああベツレヘムよ |
+| 12 | Joy to the World | Isaac Watts (1674–1748) | Lowell Mason (1792–1872), tune "Antioch" | 1719 | Authors died > 150 years ago; pairs with たみみなよろこべ / もろびとこぞりて |
+| 13 | A Mighty Fortress Is Our God | Martin Luther (1483–1546); Frederic Henry Hedge tr. (1853) | Martin Luther | 1853 | Luther > 470 yrs; Hedge (d. 1890) > 130 yrs. Pairs with 神はわがやぐら |
 
 ## User-added songs
 

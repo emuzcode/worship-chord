@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Joy to the World",
+    "subtitle": "Isaac Watts (1719) — Antioch tune by Lowell Mason",
+    "composer": "Lowell Mason (1792–1872), tune \"Antioch\" arranged from Handel's Messiah",
+    "lyricist": "Isaac Watts (1674–1748), based on Psalm 98",
+    "year": 1719,
+    "key": "D",
+    "time": "4/4",
+    "tempo": 96,
+    "x_slug": "joy-to-the-world",
+    "x_pd_status": "public_domain",
+    "x_pd_basis": "Watts (d. 1748) and Mason (d. 1872) are PD by > 150 years",
+    "x_translator": "N/A (English original) — paired with たみみなよろこべ (Japanese, 1922) and もろびとこぞりて (Japanese, 1923 sung to the same tune)",
+    "x_translator_death_year": 1748,
+    "x_source_url": "https://en.wikipedia.org/wiki/Joy_to_the_World"
+  },
+  "chordpro": "{title: Joy to the World}\n{subtitle: Isaac Watts, 1719 — \"Antioch\" tune by Lowell Mason}\n{key: D}\n{time: 4/4}\n{tempo: 96}\n{comment: Pair with たみみなよろこべ (Japanese translation, 1922) and もろびとこぞりて (Japanese, 1923, sung to the same Antioch tune).}\n\n{start_of_verse: 1}\n[D]Joy to the [A]world; the [D]Lord is [A]come!\n[Bm]Let Earth re[F#m]ceive her [G]King;\n[D]Let every [A]heart pre[D]pare Him [A]room\n[Bm]And heaven [F#m]and nature [G]sing[A]\n[D]And heaven, and [G]nature [D]sing\n[G]And heaven, and [A]heaven, and [D]nature sing.\n{end_of_verse}\n\n{start_of_verse: 2}\n[D]Joy to the [A]Earth, the [D]Saviour [A]reigns!\n[Bm]Let men their [F#m]songs em[G]ploy;\n[D]While fields and [A]floods, rocks, [D]hills and [A]plains\n[Bm]Repeat the [F#m]sounding [G]joy[A]\n[D]Repeat the [G]sounding [D]joy\n[G]Repeat, re[A]peat the [D]sounding joy.\n{end_of_verse}\n\n{start_of_verse: 3}\n[D]No more let [A]sins and [D]sorrows [A]grow\n[Bm]Nor thorns in[F#m]fest the [G]ground;\n[D]He comes to [A]make His [D]blessings [A]flow\n[Bm]Far as the [F#m]curse is [G]found[A]\n[D]Far as the [G]curse is [D]found\n[G]Far as, far [A]as the [D]curse is found.\n{end_of_verse}\n\n{start_of_verse: 4}\n[D]He rules the [A]world with [D]truth and [A]grace\n[Bm]And makes the [F#m]nations [G]prove\n[D]The glories [A]of His [D]righteous[A]ness\n[Bm]And wonders [F#m]of His [G]love[A]\n[D]And wonders [G]of His [D]love\n[G]And wonders, [A]wonders [D]of His love.\n{end_of_verse}\n"
+}
