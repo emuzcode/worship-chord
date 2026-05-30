@@ -1,6 +1,7 @@
 "use client";
 
 import { ChordDiagram } from "./ChordDiagram";
+import { vibrate } from "@/lib/haptic";
 
 type Props = {
   chords: string[];
@@ -15,9 +16,12 @@ export function ChordPalette({ chords, onSelect }: Props) {
         <button
           key={c}
           type="button"
-          onClick={() => onSelect?.(c)}
+          onClick={() => {
+            vibrate(8);
+            onSelect?.(c);
+          }}
           aria-label={`Show ${c} chord diagram`}
-          className="p-1 rounded hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
+          className="p-1 rounded hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all"
         >
           <ChordDiagram chord={c} size="sm" />
         </button>

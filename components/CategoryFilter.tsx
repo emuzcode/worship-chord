@@ -1,5 +1,7 @@
 "use client";
 
+import { vibrate } from "@/lib/haptic";
+
 export type HymnCategory = "all" | "japanese" | "english" | "my";
 
 const OPTIONS: Array<{ value: HymnCategory; label: string }> = [
@@ -27,9 +29,12 @@ export function CategoryFilter({ value, counts, onChange }: Props) {
           <button
             key={opt.value}
             type="button"
-            onClick={() => onChange(opt.value)}
+            onClick={() => {
+              if (!active) vibrate(8);
+              onChange(opt.value);
+            }}
             aria-pressed={active}
-            className={`flex-1 min-w-[80px] px-3 py-2 rounded-md text-xs font-medium tracking-wide transition-colors ${
+            className={`flex-1 min-w-[80px] px-3 py-2 rounded-md text-xs font-medium tracking-wide transition-all active:scale-95 ${
               active
                 ? "bg-foreground/10 text-foreground"
                 : "text-foreground/60 hover:text-foreground hover:bg-foreground/5"

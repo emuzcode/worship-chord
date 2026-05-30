@@ -11,6 +11,7 @@ import { addRecent } from "@/lib/recent";
 import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "@/lib/db";
 import { toggleBookmark } from "@/lib/bookmarks";
+import { vibrate } from "@/lib/haptic";
 
 type Props = {
   hymn: Hymn;
@@ -102,7 +103,10 @@ export function HymnView({ hymn }: Props) {
       el.style.cursor = "pointer";
       el.setAttribute("role", "button");
       el.setAttribute("tabindex", "0");
-      const onClick = () => setPopupChord(text);
+      const onClick = () => {
+        vibrate(8);
+        setPopupChord(text);
+      };
       const onKey = (e: KeyboardEvent) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
@@ -135,12 +139,16 @@ export function HymnView({ hymn }: Props) {
         </div>
         <button
           type="button"
-          onClick={() => slug && toggleBookmark(slug)}
+          onClick={() => {
+            if (!slug) return;
+            vibrate(12);
+            toggleBookmark(slug);
+          }}
           aria-pressed={bookmarked}
           aria-label={
             bookmarked ? "Remove from favorites" : "Add to favorites"
           }
-          className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors ${
+          className={`text-2xl leading-none px-3 py-2 rounded-md transition-colors active:scale-95 ${
             bookmarked
               ? "text-amber-400"
               : "text-foreground/40 hover:text-foreground/70"
@@ -165,14 +173,20 @@ export function HymnView({ hymn }: Props) {
           <ThemeToggle />
           <button
             type="button"
-            onClick={() => setSemitones((s) => s - 1)}
-            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 transition-colors text-xl font-mono"
+            onClick={() => {
+              vibrate(10);
+              setSemitones((s) => s - 1);
+            }}
+            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all text-xl font-mono"
             aria-label="Transpose down a semitone"
           >
             −
           </button>
           <div className="flex flex-col items-center flex-1">
-            <span className="text-3xl font-mono font-bold tracking-tight">
+            <span
+              key={currentKey}
+              className="key-flip text-3xl font-mono font-bold tracking-tight"
+            >
               {currentKey}
             </span>
             <span className="text-xs opacity-50 mt-0.5">
@@ -181,8 +195,11 @@ export function HymnView({ hymn }: Props) {
           </div>
           <button
             type="button"
-            onClick={() => setSemitones((s) => s + 1)}
-            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 transition-colors text-xl font-mono"
+            onClick={() => {
+              vibrate(10);
+              setSemitones((s) => s + 1);
+            }}
+            className="px-5 py-2 rounded-md border border-foreground/20 hover:bg-foreground/5 active:bg-foreground/10 active:scale-95 transition-all text-xl font-mono"
             aria-label="Transpose up a semitone"
           >
             ＋

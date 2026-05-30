@@ -206,6 +206,32 @@ a {
   100% { transform: translate(-50%, -50%) scale(22); opacity: 0; }
 }
 
+/* Popup entrance: backdrop fades, dialog scales up */
+@keyframes popup-backdrop-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes popup-dialog-in {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.popup-backdrop { animation: popup-backdrop-in 180ms ease-out both; }
+.popup-dialog   { animation: popup-dialog-in 200ms ease-out both; }
+
+/* Key change: the current key label re-mounts on every transposition step.
+ * Keying the element forces this animation to replay so the digit visibly
+ * snaps to its new value instead of changing silently.
+ */
+@keyframes key-flip {
+  0%   { opacity: 0; transform: translateY(-6px); }
+  60%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.key-flip { animation: key-flip 200ms ease-out both; }
+
 @media (prefers-reduced-motion: reduce) {
   .fade-up { animation: none; }
   .ambient-motif .spawned-group * {
@@ -214,4 +240,7 @@ a {
     opacity: var(--hairline-opacity);
   }
   .ripple { display: none; }
+  .popup-backdrop,
+  .popup-dialog,
+  .key-flip { animation: none; }
 }

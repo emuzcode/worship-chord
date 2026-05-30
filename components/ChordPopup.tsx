@@ -26,11 +26,11 @@ export function ChordPopup({ chord, onClose }: Props) {
       aria-modal="true"
       aria-label={`${chord} chord diagram`}
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm"
+      className="popup-backdrop fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="content-backdrop p-6 rounded-lg border border-foreground/20 max-w-[90vw]"
+        className="popup-dialog content-backdrop p-6 rounded-lg border border-foreground/20 max-w-[90vw]"
       >
         <ChordDiagram chord={chord} size="lg" eager />
         <button
